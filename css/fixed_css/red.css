@@ -1,0 +1,14 @@
+.visual.sub .sub_title h1:after{background-color:#F44336;}
+.footer{border-bottom:3px solid #F44336;}
+.footer .bottom a:active{color:#F44336}
+.header>.side>ul .ly a:hover{color:#F44336;}
+.magazine .gnb>ul>li>a:hover,.magazine .gnb>ul>li>a:focus,.magazine .gnb>ul>li>a:focus,.magazine .gnb>ul>li.on>a,.magazine .header>.side>ul>li.on>a,.magazine .header>.side>ul .ly a:hover{color:#F44336}
+.magazine .header>.side>ul>li>a:active{color:#F44336}
+.magazine .custom_area a:hover,.magazine .custom_area a:hover,.magazine .custom_area a:hover{color:#F44336}
+.gnb>ul .depth2:after{background-color:#F44336}
+.gnb>ul .depth2 a:hover,.gnb>ul .depth2 a:active,.gnb>ul .depth2 a:focus,.gnb>ul .depth2>li.on>a {color:#F44336}
+.body.fixed-width .lnb>ul>li.on a{color:#F44336}
+.body.fixed-width .lnb ul ul li.on a{color:#F44336}
+.body.fixed-width .lnb ul ul a:active{color:#F44336}
+.btn_top:hover{background-color:#F44336;}
+.gnb>ul>li>a:hover,.gnb>ul>li>a:focus,.gnb>ul>li>a:focus,.gnb>ul>li.on>a{color:#cda25a}

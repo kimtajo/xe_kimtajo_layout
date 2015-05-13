@@ -58,8 +58,93 @@
 				</options>
 			</var>
 
-			<var name="point_color" type="text">
-				<title xml:lang="ko">포인트색 설정</title>
+			<var name="use_fixed_css" type="select">
+				<description xml:lang="ko">Google Material Color에 작성된 색으로 포인트 색을 설정합니다.
+					(색 확인: http://www.google.com/design/spec/style/color.html#color-color-palette)</description>
+				<title xml:lang="ko">지정 색 사용 여부</title>
+				<options value="Y">
+					<title xml:lang="ko">사용</title>
+				</options>
+				<options value="N">
+					<title xml:lang="ko">미사용</title>
+				</options>
+			</var>
+
+			<var name="fixed_css" type="select">
+				<title xml:lang="ko">색상 선택</title>
+				<options value="red">
+					<title xml:lang="ko">red</title>
+				</options>
+				<options value="pink">
+					<title xml:lang="ko">pink</title>
+				</options>
+				<options value="purple">
+					<title xml:lang="ko">purple</title>
+				</options>
+				<options value="deep_purple">
+					<title xml:lang="ko">deep purple</title>
+				</options>
+				<options value="indigo">
+					<title xml:lang="ko">indigo</title>
+				</options>
+				<options value="blue">
+					<title xml:lang="ko">blue</title>
+				</options>
+				<options value="light_blue">
+					<title xml:lang="ko">light blue</title>
+				</options>
+				<options value="cyan">
+					<title xml:lang="ko">cyan</title>
+				</options>
+				<options value="green">
+					<title xml:lang="ko">green</title>
+				</options>
+				<options value="light_green">
+					<title xml:lang="ko">light green</title>
+				</options>
+				<options value="lime">
+					<title xml:lang="ko">lime</title>
+				</options>
+				<options value="yellow">
+					<title xml:lang="ko">yellow</title>
+				</options>
+				<options value="amber">
+					<title xml:lang="ko">amber</title>
+				</options>
+				<options value="orange">
+					<title xml:lang="ko">orange</title>
+				</options>
+				<options value="deep_orange">
+					<title xml:lang="ko">deep orange</title>
+				</options>
+				<options value="brown">
+					<title xml:lang="ko">brown</title>
+				</options>
+				<options value="grey">
+					<title xml:lang="ko">grey</title>
+				</options>
+				<options value="blue_grey">
+					<title xml:lang="ko">blue grey</title>
+				</options>
+				<options value="teal">
+					<title xml:lang="ko">teal</title>
+				</options>
+			</var>
+
+			<var name="use_custom_color" type="select">
+				<description xml:lang="ko">Google Material Color이 아닌 사용자 지정 색으로 설정합니다.</description>
+				<title xml:lang="ko">사용자 지정 색 사용 여부</title>
+				<options value="Y">
+					<title xml:lang="ko">사용</title>
+				</options>
+				<options value="N">
+					<title xml:lang="ko">미사용</title>
+				</options>
+			</var>
+
+			<var name="custom_color" type="text">
+				<title xml:lang="ko">사용자 지정 색상</title>
+				<description xml:lang="ko">사용자 지정 색상을 입력합니다.(# 포함)</description>
 			</var>
 		</group>
 		<!-- 기본 끝 -->
@@ -143,12 +228,6 @@
 				<title xml:lang="ko">메뉴 색상</title>
 				<description xml:lang="ko">메뉴의 글씨 색상을 입력합니다.(기본값: #888)</description>
 			</var>
-
-			<var name="menu_selected_color" type="text">
-				<title xml:lang="ko">메뉴 선택 시 색상</title>
-				<description xml:lang="ko">메뉴 선택 시 선택된 메뉴의 글씨 색상을 입력합니다.(기본값: #cda25a)</description>
-			</var>
-
 		</group>
 		<!-- HEADER 끝 -->
 
@@ -250,11 +329,6 @@
 			<var name="sidemenu_text_color" type="text">
 				<title xml:lang="ko">사이드 메뉴 색상</title>
 				<description xml:lang="ko">사이드 메뉴의 글씨 색상을 입력합니다.(기본값: #444)</description>
-			</var>
-
-			<var name="sidemenu_selected_color" type="text">
-				<title xml:lang="ko">사이드 메뉴 선택 시 색상</title>
-				<description xml:lang="ko">사이드 메뉴 선택 시 선택된 메뉴의 색상을 입력합니다.(기본값: #cda25a)</description>
 			</var>
 		</group>
 		<!-- 서브형 메뉴 끝 -->
