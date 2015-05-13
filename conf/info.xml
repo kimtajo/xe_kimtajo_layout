@@ -228,6 +228,7 @@
 				<title xml:lang="ko">메뉴 색상</title>
 				<description xml:lang="ko">메뉴의 글씨 색상을 입력합니다.(기본값: #888)</description>
 			</var>
+
 		</group>
 		<!-- HEADER 끝 -->
 

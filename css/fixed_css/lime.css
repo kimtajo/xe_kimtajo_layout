@@ -1,14 +1,26 @@
-.visual.sub .sub_title h1:after{background-color:#CDDC39;}
-.footer{border-bottom:3px solid #CDDC39;}
-.footer .bottom a:active{color:#CDDC39}
-.header>.side>ul .ly a:hover{color:#CDDC39;}
-.magazine .gnb>ul>li>a:hover,.magazine .gnb>ul>li>a:focus,.magazine .gnb>ul>li>a:focus,.magazine .gnb>ul>li.on>a,.magazine .header>.side>ul>li.on>a,.magazine .header>.side>ul .ly a:hover{color:#CDDC39}
-.magazine .header>.side>ul>li>a:active{color:#CDDC39}
-.magazine .custom_area a:hover,.magazine .custom_area a:hover,.magazine .custom_area a:hover{color:#CDDC39}
-.gnb>ul .depth2:after{background-color:#CDDC39}
-.gnb>ul .depth2 a:hover,.gnb>ul .depth2 a:active,.gnb>ul .depth2 a:focus,.gnb>ul .depth2>li.on>a {color:#CDDC39}
-.body.fixed-width .lnb>ul>li.on a{color:#CDDC39}
-.body.fixed-width .lnb ul ul li.on a{color:#CDDC39}
-.body.fixed-width .lnb ul ul a:active{color:#CDDC39}
-.btn_top:hover{background-color:#CDDC39;}
-.gnb>ul>li>a:hover,.gnb>ul>li>a:focus,.gnb>ul>li>a:focus,.gnb>ul>li.on>a{color:#CDDC39}
+.visual.sub .sub_title h1:after{background-color:#AFB42B;}
+.footer{border-bottom:3px solid #AFB42B;}
+.footer .bottom a:active{color:#AFB42B}
+.magazine .header>.side>ul>li>a:active{color:#AFB42B}
+.gnb>ul .depth2:after{background-color:#AFB42B}
+.body.fixed-width .lnb>ul>li.on a{color:#AFB42B}
+.body.fixed-width .lnb ul ul li.on a{color:#AFB42B}
+.body.fixed-width .lnb ul ul a:active{color:#AFB42B}
+
+.magazine .custom_area a:hover,.magazine .custom_area a:hover,.magazine .custom_area a:hover{color:#DCE775}
+.gnb>ul .depth2 a:hover,.gnb>ul .depth2 a:active,.gnb>ul .depth2 a:focus,.gnb>ul .depth2>li.on>a {color:#DCE775}
+.btn_top:hover{background-color:#DCE775;}
+.gnb>ul>li>a,.gnb>ul>li>a:hover,.gnb>ul>li>a:focus,.gnb>ul>li>a:focus,.gnb>ul>li.on>a{color:#DCE775}
+.footer .site_map > ul ul a:hover,
+.footer .site_map > ul ul a:focus,
+.footer .site_map > ul ul a:active{color:#DCE775}
+.footer .bottom a:hover,
+.footer .bottom a:focus,
+.footer .bottom a:active{color:#DCE775}
+.header>.side>ul .ly a:hover{color:#DCE775;}
+.magazine .gnb>ul>li>a:hover,
+.magazine .gnb>ul>li>a:focus,
+.magazine .gnb>ul>li>a:focus,
+.magazine .gnb>ul>li.on>a,
+.magazine .header>.side>ul>li.on>a,
+.magazine .header>.side>ul .ly a:hover{color:#DCE775}

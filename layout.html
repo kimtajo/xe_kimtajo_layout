@@ -188,7 +188,7 @@
 	.body.fixed-width .lnb ul ul li.on a{color:{$_custom_color}}
 	.body.fixed-width .lnb ul ul a:active{color:{$_custom_color}}
 	.btn_top:hover{background-color:{$_custom_color};}
-	.gnb>ul>li>a:hover,.gnb>ul>li>a:focus,.gnb>ul>li>a:focus,.gnb>ul>li.on>a{color:{$_custom_color}}
+	.gnb>ul>li>a,.gnb>ul>li>a:hover,.gnb>ul>li>a:focus,.gnb>ul>li>a:focus,.gnb>ul>li.on>a{color:{$_custom_color}}
 </style>
 </block>
 
@@ -311,7 +311,7 @@
 			<!-- GNB -->
 			<nav cond="$GNB->list" class="gnb" id="gnb">
 				<ul>
-					<li loop="$GNB->list => $key1, $val1" class="on"|cond="$val1['selected']">
+					<li loop="$GNB->list => $key1, $val1">
 						<a href="{$val1['href']}" target="_blank"|cond="$val1['open_window'] == 'Y'" style="color:{$layout_info->menu_text_color}"|cond="!$val1['selected']">{$val1['link']}</a>
 						<block cond="$val1['selected']">{@ $_selected_menu = $val1}</block>
 						<ul cond="$val1['list']" class="depth2">

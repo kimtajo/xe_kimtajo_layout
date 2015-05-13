@@ -1,14 +1,26 @@
 .visual.sub .sub_title h1:after{background-color:#2196F3;}
 .footer{border-bottom:3px solid #2196F3;}
 .footer .bottom a:active{color:#2196F3}
-.header>.side>ul .ly a:hover{color:#2196F3;}
-.magazine .gnb>ul>li>a:hover,.magazine .gnb>ul>li>a:focus,.magazine .gnb>ul>li>a:focus,.magazine .gnb>ul>li.on>a,.magazine .header>.side>ul>li.on>a,.magazine .header>.side>ul .ly a:hover{color:#2196F3}
 .magazine .header>.side>ul>li>a:active{color:#2196F3}
-.magazine .custom_area a:hover,.magazine .custom_area a:hover,.magazine .custom_area a:hover{color:#2196F3}
 .gnb>ul .depth2:after{background-color:#2196F3}
-.gnb>ul .depth2 a:hover,.gnb>ul .depth2 a:active,.gnb>ul .depth2 a:focus,.gnb>ul .depth2>li.on>a {color:#2196F3}
 .body.fixed-width .lnb>ul>li.on a{color:#2196F3}
 .body.fixed-width .lnb ul ul li.on a{color:#2196F3}
 .body.fixed-width .lnb ul ul a:active{color:#2196F3}
-.btn_top:hover{background-color:#2196F3;}
-.gnb>ul>li>a:hover,.gnb>ul>li>a:focus,.gnb>ul>li>a:focus,.gnb>ul>li.on>a{color:#2196F3}
+
+.magazine .custom_area a:hover,.magazine .custom_area a:hover,.magazine .custom_area a:hover{color:#64B5F6}
+.gnb>ul .depth2 a:hover,.gnb>ul .depth2 a:active,.gnb>ul .depth2 a:focus,.gnb>ul .depth2>li.on>a {color:#64B5F6}
+.btn_top:hover{background-color:#64B5F6;}
+.gnb>ul>li>a,.gnb>ul>li>a:hover,.gnb>ul>li>a:focus,.gnb>ul>li>a:focus,.gnb>ul>li.on>a{color:#64B5F6}
+.footer .site_map > ul ul a:hover,
+.footer .site_map > ul ul a:focus,
+.footer .site_map > ul ul a:active{color:#64B5F6}
+.footer .bottom a:hover,
+.footer .bottom a:focus,
+.footer .bottom a:active{color:#64B5F6}
+.header>.side>ul .ly a:hover{color:#64B5F6;}
+.magazine .gnb>ul>li>a:hover,
+.magazine .gnb>ul>li>a:focus,
+.magazine .gnb>ul>li>a:focus,
+.magazine .gnb>ul>li.on>a,
+.magazine .header>.side>ul>li.on>a,
+.magazine .header>.side>ul .ly a:hover{color:#64B5F6}
