@@ -134,6 +134,109 @@
 		{@ $_use_css = 'custom'}
 		{@ $_custom_color = $layout_info->custom_color}
 	</block>
+<!-- 메인 설정 시작 -->
+	<block cond="$layout_info->use_main === 'Y'">
+		<!-- 메인 1 설정 시작 -->
+		<block cond="$layout_info->use_main1_section === 'Y'">
+			<block cond="!$layout_info->main1_image">{@ $layout_info->main1_image = $layout_info->path."img/bg_stat.jpg"}</block>
+			<block cond="!$layout_info->main1_font_color">{@ $layout_info->main1_font_color = "#f6f6f6"}</block>
+			<block cond="!$layout_info->main1_text">{@ $layout_info->main1_text = "텍스트를 입력합니다."}</block>
+			<block cond="$layout_info->use_main1_btn1 == 'Y'">
+				<block cond="!$layout_info->main1_btn1_text"> {@ $layout_info->main1_btn1_text = "버튼 1"}</block>
+				<!--@if($layout_info->main1_btn1_target == 'Y')-->
+					{@ $layout_info->main1_btn1_target = "_blank"}
+				<!--@else-->
+					{@ $layout_info->main1_btn1_target = "_self"}
+				<!--@endif-->
+				<block cond="!$layout_info->main1_btn1_url"> {@ $layout_info->main1_btn1_url = "/"}</block>
+			</block>
+			<block cond="$layout_info->use_main1_btn2 === 'Y'">
+				<block cond="$layout_info->main1_btn2_text == ''"> {@ $layout_info->main1_btn2_text = "버튼 2"}</block>
+				<!--@if($layout_info->main1_btn2_target == 'Y')-->
+					{@ $layout_info->main1_btn2_target = "_blank"}
+				<!--@else-->
+					{@ $layout_info->main1_btn2_target = "_self"}
+				<!--@endif-->
+				<block cond="$layout_info->main1_btn2_url == ''"> {@ $layout_info->main1_btn2_url = "/"}</block>
+			</block>
+		</block>
+		<!-- 메인 1 설정 끝 -->
+
+		<block cond="$layout_info->use_main2_section === 'Y'">
+			<block cond="!$layout_info->main2_text">{@ $layout_info->main2_text = "Title"}</block>
+			<block cond="!$layout_info->main2_large_text">{@ $layout_info->main2_large_text = "큰 제목을 입력합니다."}</block>
+			<block cond="$layout_info->main2_list_cnt >= 1">
+				{@ $_main2_height = '320px';}
+				<block cond="!$layout_info->main2_row1_col1_ico">{@ $layout_info->main2_row1_col1_ico = "xi-plus-square"}</block>
+				<block cond="!$layout_info->main2_row1_col2_ico">{@ $layout_info->main2_row1_col2_ico = "xi-plus-square"}</block>
+				<block cond="!$layout_info->main2_row1_col3_ico">{@ $layout_info->main2_row1_col3_ico = "xi-plus-square"}</block>
+
+				<block cond="!$layout_info->main2_row1_col1_ico_link"> {@ $layout_info->main2_row1_col1_ico_link = "/"}</block>
+				<block cond="!$layout_info->main2_row1_col2_ico_link"> {@ $layout_info->main2_row1_col2_ico_link = "/"}</block>
+				<block cond="!$layout_info->main2_row1_col3_ico_link"> {@ $layout_info->main2_row1_col3_ico_link = "/"}</block>
+
+				<!--@if($layout_info->main2_row1_col1_target == 'Y')-->
+					{@ $layout_info->main2_row1_col1_target = "_blank"}
+				<!--@else-->
+					{@ $layout_info->main2_row1_col1_target = "_self"}
+				<!--@endif-->
+				<!--@if($layout_info->main2_row1_col2_target == 'Y')-->
+					{@ $layout_info->main2_row1_col2_target = "_blank"}
+				<!--@else-->
+					{@ $layout_info->main2_row1_col2_target = "_self"}
+				<!--@endif-->
+				<!--@if($layout_info->main2_row1_col3_target == 'Y')-->
+					{@ $layout_info->main2_row1_col3_target = "_blank"}
+				<!--@else-->
+					{@ $layout_info->main2_row1_col3_target = "_self"}
+				<!--@endif-->
+
+
+				<block cond="!$layout_info->main2_row1_col1_title">{@ $layout_info->main2_row1_col1_title = "제목을 입력하세요."}</block>
+				<block cond="!$layout_info->main2_row1_col2_title">{@ $layout_info->main2_row1_col2_title = "제목을 입력하세요."}</block>
+				<block cond="!$layout_info->main2_row1_col3_title">{@ $layout_info->main2_row1_col3_title = "제목을 입력하세요."}</block>
+
+				<block cond="!$layout_info->main2_row1_col1_content">{@ $layout_info->main2_row1_col1_content = "내용을 입력하세요."}</block>
+				<block cond="!$layout_info->main2_row1_col2_content">{@ $layout_info->main2_row1_col2_content = "내용을 입력하세요."}</block>
+				<block cond="!$layout_info->main2_row1_col3_content">{@ $layout_info->main2_row1_col3_content = "내용을 입력하세요."}</block>
+			</block>
+			<block cond="$layout_info->main2_list_cnt == 2">
+				{@ $_main2_height = '480px';}
+				<block cond="!$layout_info->main2_row2_col1_ico">{@ $layout_info->main2_row2_col1_ico = "xi-plus-square"}</block>
+				<block cond="!$layout_info->main2_row2_col2_ico">{@ $layout_info->main2_row2_col2_ico = "xi-plus-square"}</block>
+				<block cond="!$layout_info->main2_row2_col3_ico">{@ $layout_info->main2_row2_col3_ico = "xi-plus-square"}</block>
+
+				<block cond="!$layout_info->main2_row2_col1_ico_link"> {@ $layout_info->main2_row2_col1_ico_link = "/"}</block>
+				<block cond="!$layout_info->main2_row2_col2_ico_link"> {@ $layout_info->main2_row2_col2_ico_link = "/"}</block>
+				<block cond="!$layout_info->main2_row2_col3_ico_link"> {@ $layout_info->main2_row2_col3_ico_link = "/"}</block>
+
+				<!--@if($layout_info->main2_row2_col1_target == 'Y')-->
+					{@ $layout_info->main2_row2_col1_target = "_blank"}
+				<!--@else-->
+					{@ $layout_info->main2_row2_col1_target = "_self"}
+				<!--@endif-->
+				<!--@if($layout_info->main2_row2_col2_target == 'Y')-->
+					{@ $layout_info->main2_row2_col2_target = "_blank"}
+				<!--@else-->
+					{@ $layout_info->main2_row2_col2_target = "_self"}
+				<!--@endif-->
+				<!--@if($layout_info->main2_row2_col3_target == 'Y')-->
+					{@ $layout_info->main2_row2_col3_target = "_blank"}
+				<!--@else-->
+					{@ $layout_info->main2_row2_col3_target = "_self"}
+				<!--@endif-->
+
+				<block cond="!$layout_info->main2_row2_col1_title">{@ $layout_info->main2_row2_col1_title = "제목을 입력하세요."}</block>
+				<block cond="!$layout_info->main2_row2_col2_title">{@ $layout_info->main2_row2_col2_title = "제목을 입력하세요."}</block>
+				<block cond="!$layout_info->main2_row2_col3_title">{@ $layout_info->main2_row2_col3_title = "제목을 입력하세요."}</block>
+
+				<block cond="!$layout_info->main2_row2_col1_content">{@ $layout_info->main2_row2_col1_content = "내용을 입력하세요."}</block>
+				<block cond="!$layout_info->main2_row2_col2_content">{@ $layout_info->main2_row2_col2_content = "내용을 입력하세요."}</block>
+				<block cond="!$layout_info->main2_row2_col3_content">{@ $layout_info->main2_row2_col3_content = "내용을 입력하세요."}</block>
+			</block>
+		</block>
+	</block>
+<!-- 메인 설정 끝 -->
 	<!--// 김타조 제작 끝 -->
 
 <!--// Demo 기능 활성화 -->
@@ -151,6 +254,14 @@
 
 <!--// CSS -->
 <load target="./css/layout.css" />
+
+
+<load target="./css/camera.css" />
+<load target="./css/main_content.css" />
+<load target="./css/webfont.css" />
+<load target="./css/xeicon.css" cond="$mid === 'xeicon'" />
+<load target="../../common/xeicon/xeicon.min.css" />
+
 <block cond="$_use_css=='fixed'">
 	<load cond="$layout_info->fixed_css=='red'" target="./css/fixed_css/red.css" />
 	<load cond="$layout_info->fixed_css=='pink'" target="./css/fixed_css/pink.css" />
@@ -174,36 +285,45 @@
 </block>
 
 <block cond="$_use_css == 'custom'">
-<style type="text/css">
-	.visual.sub .sub_title h1:after{background-color:{$_custom_color};}
-	.footer{border-bottom:3px solid {$_custom_color};}
-	.footer .bottom a:active{color:{$_custom_color}}
-	.header>.side>ul .ly a:hover{color:{$_custom_color};}
-	.magazine .gnb>ul>li>a:hover,.magazine .gnb>ul>li>a:focus,.magazine .gnb>ul>li>a:focus,.magazine .gnb>ul>li.on>a,.magazine .header>.side>ul>li.on>a,.magazine .header>.side>ul .ly a:hover{color:{$_custom_color}}
-	.magazine .header>.side>ul>li>a:active{color:{$_custom_color}}
-	.magazine .custom_area a:hover,.magazine .custom_area a:hover,.magazine .custom_area a:hover{color:{$_custom_color}}
-	.gnb>ul .depth2:after{background-color:{$_custom_color}}
-	.gnb>ul .depth2 a:hover,.gnb>ul .depth2 a:active,.gnb>ul .depth2 a:focus,.gnb>ul .depth2>li.on>a {color:{$_custom_color}}
-	.body.fixed-width .lnb>ul>li.on a{color:{$_custom_color};}
-	.body.fixed-width .lnb ul ul li.on a{color:{$_custom_color}}
-	.body.fixed-width .lnb ul ul a:active{color:{$_custom_color}}
-	.btn_top:hover{background-color:{$_custom_color};}
-	.gnb>ul>li>a,.gnb>ul>li>a:hover,.gnb>ul>li>a:focus,.gnb>ul>li>a:focus,.gnb>ul>li.on>a{color:{$_custom_color}}
-</style>
+	<style type="text/css">
+		.visual.sub .sub_title h1:after{background-color:{$_custom_color};}
+		.footer{border-bottom:3px solid {$_custom_color};}
+		.footer .bottom a:active{color:{$_custom_color}}
+		.header>.side>ul .ly a:hover{color:{$_custom_color};}
+		.magazine .gnb>ul>li>a:hover,.magazine .gnb>ul>li>a:focus,.magazine .gnb>ul>li>a:focus,.magazine .gnb>ul>li.on>a,.magazine .header>.side>ul>li.on>a,.magazine .header>.side>ul .ly a:hover{color:{$_custom_color}}
+		.magazine .header>.side>ul>li>a:active{color:{$_custom_color}}
+		.magazine .custom_area a:hover,.magazine .custom_area a:hover,.magazine .custom_area a:hover{color:{$_custom_color}}
+		.gnb>ul .depth2:after{background-color:{$_custom_color}}
+		.gnb>ul .depth2 a:hover,.gnb>ul .depth2 a:active,.gnb>ul .depth2 a:focus,.gnb>ul .depth2>li.on>a {color:{$_custom_color}}
+		.body.fixed-width .lnb>ul>li.on a{color:{$_custom_color};}
+		.body.fixed-width .lnb ul ul li.on a{color:{$_custom_color}}
+		.body.fixed-width .lnb ul ul a:active{color:{$_custom_color}}
+		.btn_top:hover{background-color:{$_custom_color};}
+		.gnb>ul>li>a,.gnb>ul>li>a:hover,.gnb>ul>li>a:focus,.gnb>ul>li>a:focus,.gnb>ul>li.on>a{color:{$_custom_color}}
+		.btn_item:hover,
+		.btn_item:active
+		.btn_item:focus{background-color:{$_custom_color};color:#fff}
+		/* main_content */
+		.main_content .noti{color:{$_custom_color};}
+		.main_content .main2 .ico:hover,
+		.main_content .main2 .ico:active,
+		.main_content .main2 .ico:focus{background-color:{$_custom_color}}
+		.main_content .main2 p a:hover,
+		.main_content .main2 p a:active,
+		.main_content .main2 p a:focus{color:{$_custom_color};border-bottom:1px solid {$_custom_color}}
+
+		.main_content .main3 .fe_box a:hover{color:{$_custom_color}}
+		.main_content .main3 .fe_box.on{background-color{$_custom_color}}
+
+		.main_content .main4 .ico{background-color:{$_custom_color};}
+	</style>
 </block>
-
-<load target="./css/camera.css" />
-<load target="./css/welcome.css" />
-<load target="./css/webfont.css" />
-<load target="./css/xeicon.css" cond="$mid === 'xeicon'" />
-<load target="../../common/xeicon/xeicon.min.css" />
-
-
 <!--// JS -->
 <load target="./js/jquery.easing.js" />
 <load cond="$_enable_slide" target="./js/camera.min.js" />
 <load target="./js/layout.js" />
 <load cond="$layout_info->use_demo ==='Y'" target="./js/welcome.js" />
+<load target="./js/main_content.js" />
 <load target="./js/SmoothScroll.min.js" />
 
 
@@ -346,7 +466,7 @@
 		{@ $_url = $layout_info->path."img/".$_subheader_img }
 
 		<!--@end-->
-		{$_url}123
+
 		<span class="bg_img" style="background-image:url('{$_url}')"></span>
 		<span class="mask"></span>
 		<div class="sub_title">
@@ -417,10 +537,171 @@
 			</ul>
 		</nav>
 		<!-- /LNB -->
+
+		<!-- MAIN CONTENT -->
+		<block cond="$layout_info->use_main === 'Y'">
+			<div class="main_content">
+				<section class="main1" style="background-image:url('{$layout_info->main1_image}');">
+					<h1 style="color:{$layout_info->main1_font_color};">{$layout_info->main1_text}</h1>
+					<div class="button-area">
+						<block cond="$layout_info->use_main1_btn1 === 'Y'">
+							<a class="btn_item" target="{$layout_info->main1_btn1_target}" href="{$layout_info->main1_btn1_url}">{$layout_info->main1_btn1_text}</a>
+						</block>
+						<block cond="$layout_info->use_main1_btn2 === 'Y'">
+							<a class="btn_item" target="{$layout_info->main1_btn2_target}" href="{$layout_info->main1_btn2_url}">{$layout_info->main1_btn2_text}</a>
+						</block>
+					</div>
+				</section>
+
+				<section class="main2" style="height:{$_main2_height};">
+					<span class="noti">{$layout_info->main2_text}</span>
+					<h1 class="tit">{$layout_info->main2_large_text}</h1>
+					<ul>
+						<block cond="$layout_info->main2_list_cnt >= 1">
+							<li>
+								<a href="{$layout_info->main2_row1_col1_ico_link}" target="{$layout_info->main2_row1_col1_target}" class="ico">
+									<i class="{$layout_info->main2_row1_col1_ico}"></i><span class="blind">{$layout_info->main2_row1_col1_title}</span></a>
+								<h2>{$layout_info->main2_row1_col1_title}</h2>
+								<p>
+									{$layout_info->main2_row1_col1_content}
+								</p>
+							</li>
+							<li>
+								<a href="{$layout_info->main2_row1_col2_ico_link}" target="{$layout_info->main2_row1_col2_target}" class="ico">
+									<i class="{$layout_info->main2_row1_col2_ico}"></i><span class="blind">{$layout_info->main2_row1_col2_title}</span></a>
+								<h2>{$layout_info->main2_row1_col2_title}</h2>
+								<p>
+									{$layout_info->main2_row1_col2_content}
+								</p>
+							</li>
+							<li>
+								<a href="{$layout_info->main2_row1_col3_ico_link}" target="{$layout_info->main2_row1_col3_target}" class="ico">
+									<i class="{$layout_info->main2_row1_col3_ico}"></i><span class="blind">{$layout_info->main2_row1_col3_title}</span></a>
+								<h2>{$layout_info->main2_row1_col3_title}</h2>
+								<p>
+									{$layout_info->main2_row1_col3_content}
+								</p>
+							</li>
+						</block>
+
+						<block cond="$layout_info->main2_list_cnt == 2">
+							<li>
+								<a href="{$layout_info->main2_row2_col1_ico_link}" target="{$layout_info->main2_row2_col1_target}" class="ico">
+									<i class="{$layout_info->main2_row2_col1_ico}"></i><span class="blind">{$layout_info->main2_row2_col1_title}</span></a>
+								<h2>{$layout_info->main2_row2_col1_title}</h2>
+								<p>
+									{$layout_info->main2_row2_col1_content}
+								</p>
+							</li>
+							<li>
+								<a href="{$layout_info->main2_row2_col2_ico_link}" target="{$layout_info->main2_row2_col2_target}" class="ico">
+									<i class="{$layout_info->main2_row2_col2_ico}"></i><span class="blind">{$layout_info->main2_row2_col2_title}</span></a>
+								<h2>{$layout_info->main2_row2_col2_title}</h2>
+								<p>
+									{$layout_info->main2_row2_col2_content}
+								</p>
+							</li>
+							<li>
+								<a href="{$layout_info->main2_row2_col3_ico_link}" target="{$layout_info->main2_row2_col3_target}" class="ico">
+									<i class="{$layout_info->main2_row2_col3_ico}"></i><span class="blind">{$layout_info->main2_row2_col3_title}</span></a>
+								<h2>{$layout_info->main2_row2_col3_title}</h2>
+								<p>
+									{$layout_info->main2_row2_col3_content}
+								</p>
+							</li>
+						</block>
+					</ul>
+				</section>
+				<section class="main3">
+					<span class="noti">사업소개</span>
+					<h1 class="tit">국제 탤런트 협동조합의 핵심 사업</h1>
+					<p class="cont">국제 탤런트 협동조합에서는 재능을 기부 받아 필요로 하는 곳과 사람들에게 무상으로 제공하는<br />기본 사업을 비롯하여 다음과 같은 핵심 사업을 진행하고 있습니다.</p>
+					<ul>
+						<li>
+							<div class="fe_box">
+								<div class="fe_top">
+									<span class="ico"></span>
+									<h2>재능 기부(Talent Share)</h2>
+								</div>
+								<div class="fe_bottom">
+									<p>국제 탤런트 협동조합은 재능을 기부받아 필요로 하는 곳과 사람들에게 그 재능을 제공하는 사업을 진행합니다.</p>
+									<a href="#">READ MORE..</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="fe_box">
+								<div class="fe_top">
+									<span class="ico ico2"></span>
+									<h2>재능 마켓(Talent Market)</h2>
+								</div>
+								<div class="fe_bottom">
+									<p>국제 탤런트 협동조합은 다양한 재능 구매자와 판매자를 연결하여 재능을 구매하고 판매하는 재능 마켓 사업을 진행합니다.</p>
+									<a href="#">CHECK IT OUT</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="fe_box">
+								<div class="fe_top">
+									<span class="ico ico3"></span>
+									<h2>오픈 소스 &amp; 커뮤니티</h2>
+								</div>
+								<div class="fe_bottom">
+									<p>XE는 오픈 커뮤니티를 통해 다양한 정보를 제공합니다. 커뮤니티에서 원하는 정보를 찾거거나 공유할 수 있습니다</p>
+									<a href="#">CHECK IT OUT</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="fe_box">
+								<div class="fe_top">
+									<span class="ico ico4"></span>
+									<h2>다국어 지원</h2>
+								</div>
+								<div class="fe_bottom">
+									<p>XE는 여러 나라의 언어를 지원합니다. 웹 사이트를 언어별로 분리하지 않고도 다국어 웹 사이트를 쉽게 제작할 수 있습니다.</p>
+									<a href="#">CHECK IT OUT</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section class="main4">
+					<span class="noti">CONNECT WITH US</span>
+					<h1 class="tit">GET INVOLVED</h1>
+					<ul>
+						<li>
+							<a href="https://www.xpressengine.com/forum" target="_blank" class="ico"><i class="xi-community"></i><span class="blind">COMMUNITY</span></a>
+							<h2>COMMUNITY</h2>
+							<p>XE와 관련한 다양한 커뮤니티를 만나보세요.</p>
+						</li>
+						<li>
+							<a href="https://www.xpressengine.com/qna" target="_blank" class="ico"><i class="xi-users"></i><span class="blind">Q&A</span></a>
+							<h2>Q&A</h2>
+							<p>도움이 필요할 때에는 전문가들과 이야기할 수 있습니다.</p>
+						</li>
+						<li>
+							<a href="https://www.xpressengine.com/download" target="_blank" class="ico"><i class="xi-download-square"></i><span class="blind">DOWNLOAD</span></a>
+							<h2>DOWNLOAD</h2>
+							<p>XE 자료실을 통해 나만의 홈페이지를 만들어보세요.</p>
+						</li>
+						<li>
+							<a href="https://github.com/xpressengine/xe-core" target="_blank" class="ico"><i class="xi-github"></i><span class="blind">GITHUB</span></a>
+							<h2>GITHUB</h2>
+							<p>오픈소스 프로젝트 개발참여를 위한 GitHub 페이지입니다.</p>
+						</li>
+					</ul>
+				</section>
+						</div>
+		</block>
+		<!-- END MAIN CONTENT -->
+
 		<!-- CONTENT -->
 		<div class="content" id="content">
 			{$content}
 		</div>
+
 		<!--@if($layout_info->use_demo === 'Y')-->
 		<include target="./demo/welcome_main.html" />
 		<!--@endif-->
@@ -438,13 +719,13 @@
 						<img src="{$layout_info->footer_logo_img}" alt="{$layout_info->footer_logo_text}" />
 						<!--@else-->
 						{$layout_info->footer_logo_text}
-						<!--@end-->
+						<!--@endif-->
 					</a>
 				</p>
 				<p class="sub_desc">{$layout_info->footer_text}</p>
 				<!--@else-->
 				<include target="./demo/footer.html" />
-				<!--@end-->
+				<!--@endif-->
 			</div>
 			<div class="f_info2">
 				<div class="site_map">

@@ -24,3 +24,22 @@
 .magazine .gnb>ul>li.on>a,
 .magazine .header>.side>ul>li.on>a,
 .magazine .header>.side>ul .ly a:hover{color:#AED581}
+
+.btn_item:hover,
+.btn_item:active
+.btn_item:focus{background-color:#AED581;color:#fff}
+
+/* main_content */
+.main_content .noti{color:#8BC34A;}
+.main_content .main2 .ico:hover,
+.main_content .main2 .ico:active,
+.main_content .main2 .ico:focus{background-color:#8BC34A}
+.main_content .main2 p a:hover,
+.main_content .main2 p a:active,
+.main_content .main2 p a:focus{color:#8BC34A;border-bottom:1px solid #8BC34A}
+
+
+.main_content .main3 .fe_box a:hover{color:#8BC34A}
+.main_content .main3 .fe_box.on{background-color:#8BC34A}
+
+.main_content .main4 .ico{background-color:#8BC34A;}
