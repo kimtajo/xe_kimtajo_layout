@@ -26,15 +26,6 @@
 		<!-- 기본 시작 -->
 		<group>
 			<title xml:lang="ko">기본</title>
-			<var name="use_demo" type="select">
-				<title xml:lang="ko">메인 페이지 데모 사용</title>
-				<options value="Y">
-					<title xml:lang="ko">사용함</title>
-				</options>
-				<options value="N">
-					<title xml:lang="ko">사용 안 함</title>
-				</options>
-			</var>
 			<var name="layout_type" type="select" default="auto">
 				<title xml:lang="ko">레이아웃 타입</title>
 				<options value="auto">
@@ -302,11 +293,11 @@
 			</var>
 			<var name="main1_btn1_text" type="text">
 				<title xml:lang="ko">버튼 1 이름(메인 1)</title>
-				<description xml:lang="ko">메인 1에 포함되는 버튼 1의 이름을 입력합니다.</description>
+				<description xml:lang="ko">버튼 1의 이름을 입력합니다.</description>
 			</var>
 			<var name="main1_btn1_url" type="text">
 				<title xml:lang="ko">버튼 1 링크(메인 1)</title>
-				<description xml:lang="ko">메인 1에 포함되는 버튼1의 링크를 입력합니다.</description>
+				<description xml:lang="ko">버튼1의 링크를 입력합니다.</description>
 			</var>
 			<var name="use_main1_btn2" type="select">
 				<title xml:lang="ko">버튼 2 사용여부(메인 1)</title>
@@ -328,17 +319,17 @@
 			</var>
 			<var name="main1_btn2_text" type="text">
 				<title xml:lang="ko">버튼 2 이름(메인 1)</title>
-				<description xml:lang="ko">메인 1에 포함되는 버튼 2의 이름을 입력합니다.</description>
+				<description xml:lang="ko">버튼 2의 이름을 입력합니다.</description>
 			</var>
 			<var name="main1_btn2_url" type="text">
 				<title xml:lang="ko">버튼 2 링크(메인 1)</title>
-				<description xml:lang="ko">메인 1에 포함되는 버튼2의 링크를 입력합니다.</description>
+				<description xml:lang="ko">버튼2의 링크를 입력합니다.</description>
 			</var>
 		</group>
 		<!-- 메인 1 Section 끝 -->
 
 
-			<!-- 메인 2 Section 시작 -->
+		<!-- 메인 2 Section 시작 -->
 		<group>
 			<title xml:lang="ko">메인 2 Section</title>
 			<var name="use_main2_section" type="select">
@@ -398,7 +389,7 @@
 				<title xml:lang="ko">1행 2열 아이콘(메인 2)</title>
 				<description xml:lang="ko">1행 2열 아이콘을 선택합니다.(XEIcon에서 선택, 기본: xi-plus-square)</description>
 			</var>
-			<var name="main2_row1_col2_ico_link" type="text">
+			<var name="main2_row1_col2_ico_url" type="text">
 				<title xml:lang="ko">1행 2열 아이콘 링크(메인 2)</title>
 				<description xml:lang="ko">1행 2열 아이콘 클릭 시 이동할 링크를 선택합니다.</description>
 			</var>
@@ -422,7 +413,7 @@
 				<title xml:lang="ko">1행 3열 아이콘(메인 2)</title>
 				<description xml:lang="ko">1행 3열 아이콘을 선택합니다.(XEIcon에서 선택, 기본: xi-plus-square)</description>
 			</var>
-			<var name="main2_row1_col3_ico_link" type="text">
+			<var name="main2_row1_col3_ico_url" type="text">
 				<title xml:lang="ko">1행 3열 아이콘 링크(메인 2)</title>
 				<description xml:lang="ko">1행 3열 아이콘 클릭 시 이동할 링크를 선택합니다.</description>
 			</var>
@@ -446,7 +437,7 @@
 				<title xml:lang="ko">2행 1열 아이콘(메인 2)</title>
 				<description xml:lang="ko">2행 1열 아이콘을 선택합니다.(XEIcon에서 선택, 기본: xi-plus-square)</description>
 			</var>
-			<var name="main2_row2_col1_ico_link" type="text">
+			<var name="main2_row2_col1_ico_url" type="text">
 				<title xml:lang="ko">2행 1열 아이콘 링크(메인 2)</title>
 				<description xml:lang="ko">2행 1열 아이콘 클릭 시 이동할 링크를 선택합니다.</description>
 			</var>
@@ -470,7 +461,7 @@
 				<title xml:lang="ko">2행 2열 아이콘(메인 2)</title>
 				<description xml:lang="ko">2행 2열 아이콘을 선택합니다.(XEIcon에서 선택, 기본: xi-plus-square)</description>
 			</var>
-			<var name="main2_row2_col2_ico_link" type="text">
+			<var name="main2_row2_col2_ico_url" type="text">
 				<title xml:lang="ko">2행 2열 아이콘 링크(메인 2)</title>
 				<description xml:lang="ko">2행 2열 아이콘 클릭 시 이동할 링크를 선택합니다.</description>
 			</var>
@@ -494,7 +485,7 @@
 				<title xml:lang="ko">2행 3열 아이콘(메인 2)</title>
 				<description xml:lang="ko">2행 3열 아이콘을 선택합니다.(XEIcon에서 선택, 기본: xi-plus-square)</description>
 			</var>
-			<var name="main2_row2_col3_ico_link" type="text">
+			<var name="main2_row2_col3_ico_url" type="text">
 				<title xml:lang="ko">2행 3열 아이콘 링크(메인 2)</title>
 				<description xml:lang="ko">2행 3열 아이콘 클릭 시 이동할 링크를 선택합니다.</description>
 			</var>
@@ -516,6 +507,7 @@
 			<!-- 메인 2 Section 끝 -->
 
 		</group>
+		<!-- 메인 2 Section 끝 -->
 
 		<!-- 메인 3 Section 시작 -->
 		<group>
@@ -545,13 +537,248 @@
 				<title xml:lang="ko">메인 3 큰 제목</title>
 				<description xml:lang="ko">메인 3 큰 제목을 입력합니다.</description>
 			</var>
+			<var name="main3_large_text_color" type="text">
+				<title xml:lang="ko">메인 3 큰 제목 색상</title>
+				<description xml:lang="ko">메인 3 큰 제목의 색상을 입력합니다.(기본값: :#f6f6f6)</description>
+			</var>
 			<var name="main3_content" type="textarea">
 				<title xml:lang="ko">메인 3 내용</title>
 				<description xml:lang="ko">메인 3 내용을 입력합니다.</description>
 			</var>
+			<var name="main3_content_color" type="text">
+				<title xml:lang="ko">메인 3 내용 색상</title>
+				<description xml:lang="ko">메인 3 내용의 색상을 입력합니다.(기본값: #ddd)</description>
+			</var>
+
+			<var name="main3_sub1_title" type="text">
+				<title xml:lang="ko">서브 1 제목</title>
+				<description xml:lang="ko">서브 1 제목을 입력합니다.</description>
+			</var>
+			<var name="main3_sub1_content" type="textarea">
+				<title xml:lang="ko">서브 1 내용</title>
+				<description xml:lang="ko">서브 1 내용을 입력합니다.</description>
+			</var>
+			<var name="main3_sub1_btn_text" type="text">
+				<title xml:lang="ko">서브 1 버튼 이름</title>
+				<description xml:lang="ko">서브 1 버튼의 이름을 입력합니다.</description>
+			</var>
+			<var name="main3_sub1_btn_target" type="select">
+				<title xml:lang="ko">서브 1 버튼 새창여부</title>
+				<options value="Y">
+					<title xml:lang="ko">새창 사용</title>
+				</options>
+				<options value="N">
+					<title xml:lang="ko">사용 안 함</title>
+				</options>
+			</var>
+			<var name="main3_sub1_btn_url" type="text">
+				<title xml:lang="ko">서브 1 버튼 링크</title>
+				<description xml:lang="ko">서브 1 버튼의 링크를 입력합니다.</description>
+			</var>
+
+			<var name="main3_sub2_title" type="text">
+				<title xml:lang="ko">서브 2 제목</title>
+				<description xml:lang="ko">서브 2 제목을 입력합니다.</description>
+			</var>
+			<var name="main3_sub2_content" type="textarea">
+				<title xml:lang="ko">서브 2 내용</title>
+				<description xml:lang="ko">서브 2 내용을 입력합니다.</description>
+			</var>
+			<var name="main3_sub2_btn_text" type="text">
+				<title xml:lang="ko">서브 2 버튼 이름</title>
+				<description xml:lang="ko">서브 2 버튼의 이름을 입력합니다.</description>
+			</var>
+			<var name="main3_sub2_btn_target" type="select">
+				<title xml:lang="ko">서브 2 버튼 새창여부</title>
+				<options value="Y">
+					<title xml:lang="ko">새창 사용</title>
+				</options>
+				<options value="N">
+					<title xml:lang="ko">사용 안 함</title>
+				</options>
+			</var>
+			<var name="main3_sub2_btn_url" type="text">
+				<title xml:lang="ko">서브 2 버튼 링크</title>
+				<description xml:lang="ko">서브 2 버튼의 링크를 입력합니다.</description>
+			</var>
+
+			<var name="main3_sub3_title" type="text">
+				<title xml:lang="ko">서브 3 제목</title>
+				<description xml:lang="ko">서브 3 제목을 입력합니다.</description>
+			</var>
+			<var name="main3_sub3_content" type="textarea">
+				<title xml:lang="ko">서브 3 내용</title>
+				<description xml:lang="ko">서브 3 내용을 입력합니다.</description>
+			</var>
+			<var name="main3_sub3_btn_text" type="text">
+				<title xml:lang="ko">서브 3 버튼 이름</title>
+				<description xml:lang="ko">서브 3 버튼의 이름을 입력합니다.</description>
+			</var>
+			<var name="main3_sub3_btn_target" type="select">
+				<title xml:lang="ko">서브 3 버튼 새창여부</title>
+				<options value="Y">
+					<title xml:lang="ko">새창 사용</title>
+				</options>
+				<options value="N">
+					<title xml:lang="ko">사용 안 함</title>
+				</options>
+			</var>
+			<var name="main3_sub3_btn_url" type="text">
+				<title xml:lang="ko">서브 3 버튼 링크</title>
+				<description xml:lang="ko">서브 3 버튼의 링크를 입력합니다.</description>
+			</var>
+
+			<var name="main3_sub4_title" type="text">
+				<title xml:lang="ko">서브 4 제목</title>
+				<description xml:lang="ko">서브 4 제목을 입력합니다.</description>
+			</var>
+			<var name="main3_sub4_content" type="textarea">
+				<title xml:lang="ko">서브 4 내용</title>
+				<description xml:lang="ko">서브 4 내용을 입력합니다.</description>
+			</var>
+			<var name="main3_sub4_btn_text" type="text">
+				<title xml:lang="ko">서브 4 버튼 이름</title>
+				<description xml:lang="ko">서브 4 버튼의 이름을 입력합니다.</description>
+			</var>
+			<var name="main3_sub4_btn_target" type="select">
+				<title xml:lang="ko">서브 4 버튼 새창여부</title>
+				<options value="Y">
+					<title xml:lang="ko">새창 사용</title>
+				</options>
+				<options value="N">
+					<title xml:lang="ko">사용 안 함</title>
+				</options>
+			</var>
+			<var name="main3_sub4_btn_url" type="text">
+				<title xml:lang="ko">서브 4 버튼 링크</title>
+				<description xml:lang="ko">서브 4 버튼의 링크를 입력합니다.</description>
+			</var>
+
+
 
 		</group>
 		<!-- 메인 3 Section 끝 -->
+
+		<!-- 메인 4 Section 시작 -->
+		<group>
+			<title xml:lang="ko">메인 4 Section</title>
+			<var name="use_main4_section" type="select">
+				<title xml:lang="ko">메인 4 Section 사용</title>
+				<options value="Y">
+					<title xml:lang="ko">사용함</title>
+				</options>
+				<options value="N">
+					<title xml:lang="ko">사용 안 함</title>
+				</options>
+			</var>
+
+			<var name="main4_text" type="text">
+				<title xml:lang="ko">메인 2 제목</title>
+				<description xml:lang="ko">메인 2 제목을 입력합니다.</description>
+			</var>
+			<var name="main4_large_text" type="text">
+				<title xml:lang="ko">메인 2 큰 제목</title>
+				<description xml:lang="ko">메인 2 큰 제목을 입력합니다.</description>
+			</var>
+
+			<var name="main4_sub1_icon" type="text">
+			<title xml:lang="ko">서브 1 아이콘</title>
+			<description xml:lang="ko">서브 1 아이콘을 선택합니다.(XEIcon에서 선택, 기본: xi-plus-square)</description>
+		</var>
+			<var name="main4_sub1_url" type="text">
+				<title xml:lang="ko">서브 1 아이콘 링크</title>
+				<description xml:lang="ko">서브 1 아이콘 클릭 시 이동할 링크를 선택합니다.</description>
+			</var>
+			<var name="main4_sub1_target" type="select">
+				<title xml:lang="ko">서브 1 아이콘 링크 새창여부</title>
+				<options value="Y">
+					<title xml:lang="ko">새창 사용</title>
+				</options>
+				<options value="N">
+					<title xml:lang="ko">사용 안 함</title>
+				</options>
+			</var>
+			<var name="main4_sub1_title" type="text">
+				<title xml:lang="ko">서브 1 제목</title>
+			</var>
+			<var name="main4_sub1_content" type="textarea">
+				<title xml:lang="ko">서브 1 내용</title>
+			</var>
+
+			<var name="main4_sub2_icon" type="text">
+				<title xml:lang="ko">서브 2 아이콘</title>
+				<description xml:lang="ko">서브 2 아이콘을 선택합니다.(XEIcon에서 선택, 기본: xi-plus-square)</description>
+			</var>
+			<var name="main4_sub2_url" type="text">
+				<title xml:lang="ko">서브 2 아이콘 링크</title>
+				<description xml:lang="ko">서브 2 아이콘 클릭 시 이동할 링크를 선택합니다.</description>
+			</var>
+			<var name="main4_sub2_target" type="select">
+				<title xml:lang="ko">서브 2 아이콘 링크 새창여부</title>
+				<options value="Y">
+					<title xml:lang="ko">새창 사용</title>
+				</options>
+				<options value="N">
+					<title xml:lang="ko">사용 안 함</title>
+				</options>
+			</var>
+			<var name="main4_sub2_title" type="text">
+				<title xml:lang="ko">서브 2 제목</title>
+			</var>
+			<var name="main4_sub2_content" type="textarea">
+				<title xml:lang="ko">서브 2 내용</title>
+			</var>
+
+			<var name="main4_sub3_icon" type="text">
+				<title xml:lang="ko">서브 3 아이콘</title>
+				<description xml:lang="ko">서브 3 아이콘을 선택합니다.(XEIcon에서 선택, 기본: xi-plus-square)</description>
+			</var>
+			<var name="main4_sub3_url" type="text">
+				<title xml:lang="ko">서브 3 아이콘 링크</title>
+				<description xml:lang="ko">서브 3 아이콘 클릭 시 이동할 링크를 선택합니다.</description>
+			</var>
+			<var name="main4_sub3_target" type="select">
+				<title xml:lang="ko">서브 3 아이콘 링크 새창여부</title>
+				<options value="Y">
+					<title xml:lang="ko">새창 사용</title>
+				</options>
+				<options value="N">
+					<title xml:lang="ko">사용 안 함</title>
+				</options>
+			</var>
+			<var name="main4_sub3_title" type="text">
+				<title xml:lang="ko">서브 3 제목</title>
+			</var>
+			<var name="main4_sub3_content" type="textarea">
+				<title xml:lang="ko">서브 3 내용</title>
+			</var>
+
+			<var name="main4_sub4_icon" type="text">
+				<title xml:lang="ko">서브 4 아이콘</title>
+				<description xml:lang="ko">서브 4 아이콘을 선택합니다.(XEIcon에서 선택, 기본: xi-plus-square)</description>
+			</var>
+			<var name="main4_sub4_url" type="text">
+				<title xml:lang="ko">서브 4 아이콘 링크</title>
+				<description xml:lang="ko">서브 4 아이콘 클릭 시 이동할 링크를 선택합니다.</description>
+			</var>
+			<var name="main4_sub4_target" type="select">
+				<title xml:lang="ko">서브 4 아이콘 링크 새창여부</title>
+				<options value="Y">
+					<title xml:lang="ko">새창 사용</title>
+				</options>
+				<options value="N">
+					<title xml:lang="ko">사용 안 함</title>
+				</options>
+			</var>
+			<var name="main4_sub4_title" type="text">
+				<title xml:lang="ko">서브 4 제목</title>
+			</var>
+			<var name="main4_sub4_content" type="textarea">
+				<title xml:lang="ko">서브 4 내용</title>
+			</var>
+
+		</group>
+		<!-- 메인 4 Section 끝 -->
 
 		<!-- 메인 설정 끝 -->
 
