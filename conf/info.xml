@@ -365,7 +365,7 @@
 				<title xml:lang="ko">1행 1열 아이콘(메인 2)</title>
 				<description xml:lang="ko">1행 1열 아이콘을 선택합니다.(XEIcon에서 선택, 기본: xi-plus-square)</description>
 			</var>
-			<var name="main2_row1_col1_ico_link" type="text">
+			<var name="main2_row1_col1_ico_url" type="text">
 				<title xml:lang="ko">1행 1열 아이콘 링크(메인 2)</title>
 				<description xml:lang="ko">1행 1열 아이콘 클릭 시 이동할 링크를 선택합니다.</description>
 			</var>
