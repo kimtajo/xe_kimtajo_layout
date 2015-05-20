@@ -67,12 +67,14 @@
 'dispNcenterliteNotifyList',
 'dispLoginxeclientListProvider',
 'dispAjaxboardNotificationConfig',
+'dispXimemberSignUpForm',
 'IS'
 )}
 <block cond="in_array($act, $_fixed_width_act)">
 	{@ $_body_class[] = 'fixed-width'}
 	{@ $layout_info->sidebar_position = 'none'}
 	{@ $sub_header_title = 'Membership'}
+	{@ $_enable_main = false}
 	<block cond="$act === 'IS'">{@ $sub_header_title = 'Search'}</block>
 </block>
 
