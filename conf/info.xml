@@ -17,7 +17,7 @@
 		<menu name="FNB" maxdepth="2">
 			<title xml:lang="ko">푸터 메뉴</title>
 		</menu>
-		<menu name="ANB" maxdepth="2">
+		<menu name="FNB2" maxdepth="1">
 			<title xml:lang="ko">이용약관 메뉴</title>
 		</menu>
 	</menus>
