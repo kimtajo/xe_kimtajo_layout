@@ -28,7 +28,8 @@
 .btn_item:hover,
 .btn_item:active
 .btn_item:focus{background-color:#A1887F;color:#fff}
-
+.body.fixed-width .lnb>ul>li.on>ul>li.on a{color:#FFD54F}
+.body.fixed-width .lnb ul ul li.on a{color:#FFD54F}
 /* main_content */
 .main_content .noti{color:#795548;}
 .main_content .main2 .ico:hover,

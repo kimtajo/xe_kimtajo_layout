@@ -191,6 +191,9 @@ a:hover,a:active,a:focus{text-decoration:none}
 .body.fixed-width .lnb>ul>li>a,.body.fixed-width .lnb>ul>li>span{display:block;line-height:21px;margin-bottom:14px;font-size:15px;color:#444}
 .body.fixed-width .lnb>ul>li.on a{color:#cda25a}
 .body.fixed-width .lnb ul ul li.on a{color:#cda25a}
+
+.body.fixed-width .lnb>ul>li.on>ul>li>a,.body.fixed-width .lnb>ul>li.on>ul>li>span{display:block;line-height:21px;margin-left:14px;margin-top:10px;font-size:15px;}
+
 .body.fixed-width .lnb ul ul a{display:block;padding:10px 0;font-size:14px;line-height:20px;color:#888;text-decoration:none}
 .body.fixed-width .lnb ul ul a:hover,
 .body.fixed-width .lnb ul ul a:focus,

@@ -6,6 +6,8 @@
 .body.fixed-width .lnb>ul>li.on a{color:#FF5722}
 .body.fixed-width .lnb ul ul li.on a{color:#FF5722}
 .body.fixed-width .lnb ul ul a:active{color:#FF5722}
+.body.fixed-width .lnb>ul>li.on>ul>li.on a{color:#FF5722}
+.body.fixed-width .lnb ul ul li.on a{color:#FF5722}
 
 .magazine .custom_area a:hover,.magazine .custom_area a:hover,.magazine .custom_area a:hover{color:#FF8A65}
 .gnb>ul .depth2 a:hover,.gnb>ul .depth2 a:active,.gnb>ul .depth2 a:focus,.gnb>ul .depth2>li.on>a {color:#FF8A65}

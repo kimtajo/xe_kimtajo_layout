@@ -196,6 +196,10 @@
 		.btn_item:hover,
 		.btn_item:active
 		.btn_item:focus{background-color:{$_custom_color};color:#fff}
+		.body.fixed-width .lnb>ul>li.on>ul>li.on a{color:{$_custom_color}}
+		.body.fixed-width .lnb ul ul li.on a{color:{$_custom_color}}
+
+
 		/* main_content */
 		.main_content .noti{color:{$_custom_color};}
 		.main_content .main2 .ico:hover,
@@ -372,7 +376,7 @@
 		<!-- 슬라이드 -->
 		<div class="camera_wrap">
 			<!--@if($_sample_slide)-->
-			<include target="./demo/slide.html" />
+			<include target="./main/demo_slide.html" />
 			<!--@else-->
 			<div cond="$layout_info->slide_img1" data-src="{$layout_info->slide_img1}">
 				<div cond="$layout_info->slide_text1" class="camera_caption fadeIn">
@@ -421,10 +425,10 @@
 		<nav cond="$_selected_menu['list'] && $layout_info->layout_type === 'sub' && $layout_info->sidebar_position !== 'none'" class="lnb">
 			<ul>
 				<li loop="$_selected_menu['list'] => $key1, $val1" class="on"|cond="$val1['selected']">
-					<a href="{$val1['href']}" target="_blank"|cond="$val1['open_window'] == 'Y'" style="color:{$layout_info->sidemenu_text_color}};"|cond="!$val1['selected']">{$val1['link']}</a>
+					<a href="{$val1['href']}" target="_blank"|cond="$val1['open_window'] == 'Y'" style="color:{$layout_info->sidemenu_text_color};"|cond="!$val1['selected']">{$val1['link']}</a>
 					<ul cond="$val1['list']">
 						<li loop="$val1['list'] => $key2, $val2" class="on"|cond="$val2['selected']">
-							<a href="{$val2['href']}" target="_blank"|cond="$val2['open_window'] == 'Y'">{$val2['link']}</a>
+							<a href="{$val2['href']}" target="_blank"|cond="$val2['open_window'] == 'Y'" style="color:{$layout_info->sidemenu_text_color};"|cond="!$val2['selected']">{$val2['link']}</a>
 						</li>
 					</ul>
 				</li>
