@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<layout version="0.1">
+<layout version="0.2">
 	<title xml:lang="ko">XEDITION edited by Kim Tajo</title>
 	<description xml:lang="ko">XE 1.8 기본 테마 수정버전</description>
-	<version>1.11</version>
+	<version>1.12</version>
 	<date>2015-05-21</date>
 	<author email_address="gptjdwkd891@gmail.com" link="">
 		<name xml:lang="ko">김타조</name>
@@ -22,7 +22,6 @@
 		</menu>
 	</menus>
 	<extra_vars>
-
 		<!-- 기본 시작 -->
 		<group>
 			<title xml:lang="ko">기본</title>
