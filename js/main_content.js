@@ -31,7 +31,7 @@
     var firstTop;
     $this.each(function() {
       if($this.hasClass('main1')){
-        firstTop = $this.offset().top + 600;
+        firstTop = $this.offset().top + 100;
       } else {
         firstTop = $this.offset().top;
       }
