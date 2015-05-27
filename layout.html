@@ -124,16 +124,17 @@
 
 
 
-	<!--// 김타조 제작 -->
-	<block cond="!$layout_info->sub_title_color">{@ $layout_info->sub_title_color = "#444"}</block>
-	<block cond="!$layout_info->menu_text_color">{@ $layout_info->menu_text_color = "#888"}</block>
-	<block cond="!$layout_info->sidemenu_text_color">{@ $layout_info->sidemenu_text_color = "#444"}</block>
-	<block cond="$layout_info->use_fixed_css=='Y'">{@ $_use_css = 'fixed'}</block>
-	<block cond="$layout_info->use_fixed_css=='N' && $layout_info->use_custom_color =='Y'">
-		{@ $_use_css = 'custom'}
-		{@ $_custom_color = $layout_info->custom_color}
-	</block>
-	<!--// 김타조 제작 끝 -->
+<!--// 김타조 제작 -->
+<block cond="!$layout_info->logo_text_color">{@ $layout_info->logo_text_color = "#888"}</block>
+<block cond="!$layout_info->sub_title_color">{@ $layout_info->sub_title_color = "#444"}</block>
+<block cond="!$layout_info->menu_text_color">{@ $layout_info->menu_text_color = "#888"}</block>
+<block cond="!$layout_info->sidemenu_text_color">{@ $layout_info->sidemenu_text_color = "#444"}</block>
+<block cond="$layout_info->use_fixed_css=='Y'">{@ $_use_css = 'fixed'}</block>
+<block cond="$layout_info->use_fixed_css=='N' && $layout_info->use_custom_color =='Y'">
+	{@ $_use_css = 'custom'}
+	{@ $_custom_color = $layout_info->custom_color}
+</block>
+<!--// 김타조 제작 끝 -->
 
 
 
@@ -198,8 +199,6 @@
 		.btn_item:focus{background-color:{$_custom_color};color:#fff}
 		.body.fixed-width .lnb>ul>li.on>ul>li.on a{color:{$_custom_color}}
 		.body.fixed-width .lnb ul ul li.on a{color:{$_custom_color}}
-
-
 		/* main_content */
 		.main_content .noti{color:{$_custom_color};}
 		.main_content .main2 .ico:hover,
@@ -208,10 +207,8 @@
 		.main_content .main2 p a:hover,
 		.main_content .main2 p a:active,
 		.main_content .main2 p a:focus{color:{$_custom_color};border-bottom:1px solid {$_custom_color}}
-
 		.main_content .main3 .fe_box a:hover{color:{$_custom_color}}
 		.main_content .main3 .fe_box.on{background-color{$_custom_color}}
-
 		.main_content .main4 .ico{background-color:{$_custom_color};}
 	</style>
 </block>
@@ -262,11 +259,13 @@
 					</block>
 					<img src="{$_logo_img}" data-logo="{$layout_info->logo_img}"|cond="$_onepage_header && $layout_info->logo_img_transparent" alt="{$layout_info->logo_text}" />
 					<!--@endif-->
-					<!--@else-->
+					<!--@else if(!$layout_info->logo_text)-->
 					{@ $_logo_img = 'logo.png'}
 					<block cond="$_magazine_header">{@ $_logo_img = 'm_logo.png'}</block>
 					<block cond="$_onepage_header">{@ $_logo_img = 's_logo.png'}</block>
 					<img src="{$layout_info->path}img/{$_logo_img}" data-logo="{$layout_info->path}img/logo.png"|cond="$_onepage_header" alt="XEDITION" />
+					<!--@else-->
+					<span style="color:{$layout_info->logo_text_color};">{$layout_info->logo_text}</span>
 					<!--@end-->
 				</a>
 			</h1>

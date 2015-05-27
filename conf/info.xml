@@ -209,11 +209,13 @@
 			<var name="logo_text" type="text">
 				<title xml:lang="ko">사이트 로고 문자</title>
 			</var>
+			<var name="logo_text_color" type="text">
+				<title xml:lang="ko">사이트 로고 색상</title>
+				<description xml:lang="ko">메뉴의 글씨 색상을 입력합니다.(기본값: #888)</description>
+			</var>
 			<var name="logo_url" type="text">
 				<title xml:lang="ko">사이트 로고 링크 주소</title>
 			</var>
-
-
 			<var name="menu_text_color" type="text">
 				<title xml:lang="ko">메뉴 색상</title>
 				<description xml:lang="ko">메뉴의 글씨 색상을 입력합니다.(기본값: #888)</description>
