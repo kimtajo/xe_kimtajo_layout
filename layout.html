@@ -68,8 +68,15 @@
 'dispLoginxeclientListProvider',
 'dispAjaxboardNotificationConfig',
 'dispXimemberSignUpForm',
-'IS'
+'IS',
 )}
+
+<block cond="$layout_info->fixed_width_act">
+	{@ $fixed_width_act = explode("\n", $layout_info->fixed_width_act)}
+ 	<!--@foreach($fixed_width_act as $data)-->
+	{@ array_push($_fixed_width_act, trim($data))}
+	<!--@end-->
+</block>
 <block cond="in_array($act, $_fixed_width_act)">
 	{@ $_body_class[] = 'fixed-width'}
 	{@ $layout_info->sidebar_position = 'none'}

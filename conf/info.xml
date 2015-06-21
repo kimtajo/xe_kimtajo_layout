@@ -136,6 +136,11 @@
 				<title xml:lang="ko">사용자 지정 색상</title>
 				<description xml:lang="ko">사용자 지정 색상을 입력합니다.(# 포함)</description>
 			</var>
+
+			<var name="fixed_width_act" type="textarea">
+				<title xml:lang="ko">페이지 내 콘텐츠 영역 폭 고정 Action 지정</title>
+				<description xml:lang="ko">새로운 모듈을 설치하였을 경우, index로 인식하지 않도록 해당 act값을 설정합니다. 여러개인 경우 엔터를 이용하여 작성합니다.</description>
+			</var>
 		</group>
 		<!-- 기본 끝 -->
 
@@ -802,18 +807,6 @@
 				</options>
 				<options value="magazine_regular">
 					<title xml:lang="ko">매거진형 : REGULAR HEADER</title>
-				</options>
-			</var>
-			<var name="content_fixed_width" type="select" default="index">
-				<title xml:lang="ko">contet_fixed_width</title>
-				<options value="index">
-					<title xml:lang="ko">시작 모듈만 전체 폭</title>
-				</options>
-				<options value="N">
-					<title xml:lang="ko">전체 폭</title>
-				</options>
-				<options value="Y">
-					<title xml:lang="ko">고정폭</title>
 				</options>
 			</var>
 			<var name="menu_fixed" type="select">
