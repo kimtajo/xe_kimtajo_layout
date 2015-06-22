@@ -193,6 +193,7 @@ a:hover,a:active,a:focus{text-decoration:none}
 .body.fixed-width .lnb ul ul li.on a{color:#cda25a}
 
 .body.fixed-width .lnb>ul>li.on>ul>li>a,.body.fixed-width .lnb>ul>li.on>ul>li>span{display:block;line-height:21px;margin-left:14px;font-size:14px;}
+.body.fixed-width .lnb>ul>li.on>ul>li.on>ul>li>a,.body.fixed-width .lnb>ul>li.on>ul>li.on>ul>li>span{display:block;line-height:21px;margin-left:27px;font-size:12px;}
 
 .body.fixed-width .lnb ul ul a{display:block;padding:10px 0;font-size:14px;line-height:20px;color:#888;text-decoration:none;margin-left: 14px;}
 .body.fixed-width .lnb ul ul a:hover,
