@@ -139,7 +139,7 @@
 
 			<var name="fixed_width_act" type="textarea">
 				<title xml:lang="ko">페이지 내 콘텐츠 영역 폭 고정 Action 지정</title>
-				<description xml:lang="ko">새로운 모듈을 설치하였을 경우, index로 인식하지 않도록 해당 act값을 설정합니다. 여러개인 경우 엔터를 이용하여 작성합니다.</description>
+				<description xml:lang="ko">새로운 모듈을 설치하였을 경우, 전체폭으로 인식하지 않도록 해당 act값을 설정합니다. 여러개인 경우 엔터를 이용하여 작성합니다.</description>
 			</var>
 		</group>
 		<!-- 기본 끝 -->
@@ -529,7 +529,7 @@
 			</var>
 			<var name="main3_image" type="image">
 				<title xml:lang="ko">메인 3 이미지</title>
-				<description xml:lang="ko">메인 3의 선택 이미지들을 선택합니다.(전체 크기: 240x480, 아이템 크기: 70x70)</description>
+				<description xml:lang="ko">메인 3의 선택 이미지들을 선택합니다.(전체 크기: 280x140, 아이템 크기: 70x70)</description>
 			</var>
 			<var name="main3_background_color" type="text">
 				<title xml:lang="ko">메인 3 배경 색상</title>
