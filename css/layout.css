@@ -82,6 +82,29 @@ a:hover,a:active,a:focus{text-decoration:none}
 .btn_item:focus{background-color:#CBA061;color:#fff}
 .btn_item + .btn_item {margin-left: 10px; }
 
+.popup_btn {
+	background-color: #CBA061;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+}
+.popup_btn:hover {
+	background-color: #555;
+}
+.popup_btn.b-close, .popup_btn.bClose {
+	border-radius: 7px 7px 7px 7px;
+	box-shadow: none;
+	font: bold 131% sans-serif;
+	padding: 0 6px 2px;
+	position: absolute;
+	right: -7px;
+	top: -7px;
+}
+
+
 /* Login */
 .header>.side>ul>li{float:left;position:relative}
 .header>.side>ul:after{display:block;clear:both;content:''}

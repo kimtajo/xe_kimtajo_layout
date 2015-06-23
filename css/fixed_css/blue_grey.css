@@ -31,6 +31,8 @@
 .btn_item:active
 .btn_item:focus{background-color:#90A4AE;color:#fff}
 
+.popup_btn{background-color: #90A4AE;}
+
 /* main_content */
 .main_content .noti{color:#607D8B;}
 .main_content .main2 .ico:hover,

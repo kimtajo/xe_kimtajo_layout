@@ -146,7 +146,6 @@
 
 
 
-
 {@ $_body_class = join(' ', $_body_class)}
 {@ $_visual_class = join(' ', $_visual_class)}
 {@ $_container_class = join(' ', $_container_class)}
@@ -206,6 +205,7 @@
 		.btn_item:focus{background-color:{$_custom_color};color:#fff}
 		.body.fixed-width .lnb>ul>li.on>ul>li.on a{color:{$_custom_color}}
 		.body.fixed-width .lnb ul ul li.on a{color:{$_custom_color}}
+		.popup_btn{background-color:{$_custom_color}}
 		/* main_content */
 		.main_content .noti{color:{$_custom_color};}
 		.main_content .main2 .ico:hover,
@@ -217,6 +217,7 @@
 		.main_content .main3 .fe_box a:hover{color:{$_custom_color}}
 		.main_content .main3 .fe_box.on{background-color{$_custom_color}}
 		.main_content .main4 .ico{background-color:{$_custom_color};}
+
 	</style>
 </block>
 
@@ -228,7 +229,16 @@
 <load target="./js/main_content.js" />
 <load target="./js/SmoothScroll.min.js" />
 
+<!-- LAYER POPUP -->
+<div cond="$layout_info->use_layer_popup === 'Y' && $layout_info->layout_type =='main' && $_enable_main">
+	<load target="./css/bpopup.css" />
+	<load target="./js/jquery.bpopup.min.js" type="body" />
+	<load target="./js/layer_popup.js" type="body" />
 
+
+	<include target="./main/layer_popup.html" />
+</div>
+<!-- LAYER POPUP 끝 -->
 <!--// BODY -->
 <p class="skip"><a href="#content">{$lang->skip_to_content}</a></p>
 <div class="container {$_container_class}  {$menutype_class}">
@@ -603,5 +613,44 @@
 			});
 		});
 	</script>
+	<block cond="$layout_info->use_layer_popup === 'Y' && $layout_info->layout_type =='main' && $_enable_main">
+
+		<block cond="$_popup_type == 'text'">
+			<script>
+				jQuery(function () {
+					jQuery('#layer_popup_text').bPopup({
+						modalClose: false
+					});
+				});
+			</script>
+		</block>
+
+		<block cond="$_popup_type == 'image'">
+			<script>
+				jQuery(function ($) {
+					bpopup_load_image('{$_popup_load_url}', '{$_move_url}', '{$_move_target}');
+					$("#bpopup_img").click(function(){
+						$('#layer_popup_image').bPopup().close();
+					})
+				});
+			</script>
+		</block>
+
+		<block cond="$_popup_type == 'iframe'">
+			<script>
+				jQuery(function () {
+					/*
+					jQuery('#layer_popup_iframe').bPopup({
+						modalClose: false,
+						content:'iframe',
+						contentContainer:'.layer_popup_iframe_content',
+						loadUrl:'http://dinbror.dk/blog'
+					});*/
+					bpopup_load_iframe('{$_iframe_url}');
+				});
+			</script>
+		</block>
+
+	</block>
 </section>
 <!-- /Login widget -->

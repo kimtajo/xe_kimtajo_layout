@@ -144,6 +144,67 @@
 		</group>
 		<!-- 기본 끝 -->
 
+		<!-- 레이어 팝업 -->
+		<group>
+			<title xml:lang="ko">레이어 팝업</title>
+			<var name="use_layer_popup" type="select">
+				<title xml:lang="ko">레이어 팝업 사용</title>
+				<options value="Y">
+					<title xml:lang="ko">사용함</title>
+				</options>
+				<options value="N">
+					<title xml:lang="ko">사용 안 함</title>
+				</options>
+			</var>
+			<var name="layer_popup_type" type="select">
+				<title xml:lang="ko">레이어 팝업 타입</title>
+				<options value="text">
+					<title xml:lang="ko">텍스트</title>
+				</options>
+				<options value="image">
+					<title xml:lang="ko">이미지</title>
+				</options>
+				<options value="iframe">
+					<title xml:lang="ko">iframe</title>
+				</options>
+			</var>
+			<var name="layer_popup_text" type="textarea">
+				<title xml:lang="ko">[텍스트 설정] 텍스트 내용 입력</title>
+				<description xml:lang="ko">타입을 텍스트로 선택한 경우, html 태그를 포함하여 내용을 입력합니다.</description>
+			</var>
+			<var name="layer_popup_image" type="image">
+				<title xml:lang="ko">[이미지 설정] 이미지 선택</title>
+				<description xml:lang="ko">타입을 이미지로 선택한 경우, 이미지를 업로드합니다.</description>
+			</var>
+			<var name="layer_popup_move_url" type="text">
+				<title xml:lang="ko">[이미지 설정] 이미지 클릭 시 이동 URL</title>
+				<description xml:lang="ko">타입을 이미지로 선택한 경우, 이미지를 클릭 시 이동할 URL 주소를 작성합니다. 작성하지 않은 경우 이동하지 않습니다.</description>
+			</var>
+			<var name="layer_popup_move_target" type="select">
+				<title xml:lang="ko">[이미지 설정] 이미지 클릭 시 이동 URL 새창여부</title>
+				<options value="_self">
+					<title xml:lang="ko">사용 안 함</title>
+				</options>
+				<options value="_blank">
+					<title xml:lang="ko">새창 사용</title>
+				</options>
+			</var>
+
+			<var name="layer_popup_iframe_url" type="text">
+				<title xml:lang="ko">[iframe 설정] iframe URL</title>
+				<description xml:lang="ko">타입을 iframe으로 선택한 경우, iframe 주소를 입력합니다.</description>
+			</var>
+			<var name="layer_popup_iframe_min_width" type="text">
+				<title xml:lang="ko">[iframe 설정] iframe 넓이</title>
+				<description xml:lang="ko">타입을 iframe으로 선택한 경우, 넓이를 px로 입력합니다. px까지 작성해야 합니다.(기본값: 450px)</description>
+			</var>
+			<var name="layer_popup_iframe_min_height" type="text">
+				<title xml:lang="ko">[iframe 설정] iframe 높이</title>
+				<description xml:lang="ko">타입을 iframe으로 선택한 경우, 높이를 px로 입력합니다. px까지 작성해야 합니다.(기본값: 800px)</description>
+			</var>
+		</group>
+		<!-- 레이어 팝업 끝 -->
+
 		<!-- 슬라이드 시작 -->
 		<group>
 			<title xml:lang="ko">슬라이드</title>
