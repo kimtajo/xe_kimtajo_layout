@@ -102,18 +102,6 @@
             return false;
         });
 
-        // slide
-        if($.isFunction($.fn.camera) && $(".camera_wrap").length) {
-            $(".camera_wrap").camera({
-                height: "600px",
-                pagination: true,
-                thumbnails: false,
-                playPause: false,
-                loader: "none",
-                fx: "simpleFade",
-                time: 3000
-            });
-        }
 
         // Scroll to top
         var scrollToTop = function() {

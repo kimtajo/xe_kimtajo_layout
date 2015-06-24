@@ -225,6 +225,7 @@
 <!--// JS -->
 <load target="./js/jquery.easing.js" />
 <load cond="$_enable_slide" target="./js/camera.min.js" />
+<load cond="$_enable_slide" target="./js/slide.min.js" />
 <load target="./js/layout.js" />
 <load target="./js/main_content.js" />
 <load target="./js/SmoothScroll.min.js" />
@@ -389,6 +390,29 @@
 	</div>
 
 	<div cond="$layout_info->layout_type === 'main' && $_enable_slide && $layout_info->use_slide === 'Y'" class="visual">
+		<block cond="!$layout_info->slide_height">{@ $layout_info->slide_height='600px'}</block>
+		<block cond="!$layout_info->slide_pagination">{@ $layout_info->slide_pagination=true}</block>
+		<block cond="!$layout_info->slide_time">{@ $layout_info->slide_time=3000}</block>
+		<block cond="!$layout_info->slide_loader">{@ $layout_info->slide_loader='none'}</block>
+		<block cond="!$layout_info->slide_fx">{@ $layout_info->slide_fx='simpleFade'}</block>
+
+		<script>
+			// slide
+			jQuery(function ($) {
+				if($.isFunction($.fn.camera) && $(".camera_wrap").length) {
+					$(".camera_wrap").camera({
+						height: "{$layout_info->slide_height}",
+						pagination: {$layout_info->slide_pagination},
+						thumbnails: false,
+						playPause: false,
+						loader: "{$layout_info->slide_loader}",
+						fx: "{$layout_info->slide_fx}",
+						time: {$layout_info->slide_time}
+					});
+				}
+			});
+
+		</script>
 		<!-- 슬라이드 -->
 		<div class="camera_wrap">
 			<!--@if($_sample_slide)-->

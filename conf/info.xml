@@ -2,7 +2,7 @@
 <layout version="0.2">
 	<title xml:lang="ko">XEDITION edited by Kim Tajo</title>
 	<description xml:lang="ko">XE 1.8 기본 테마 수정버전</description>
-	<version>1.15</version>
+	<version>1.20</version>
 	<date>2015-06-23</date>
 	<author email_address="gptjdwkd891@gmail.com" link="">
 		<name xml:lang="ko">김타조</name>
@@ -216,6 +216,53 @@
 				<options value="N">
 					<title xml:lang="ko">사용 안 함</title>
 				</options>
+			</var>
+			<var name="slide_height" type="text">
+				<title xml:lang="ko">슬라이드 높이</title>
+				<description xml:lang="ko">슬라이드 높이를 px까지 입력합니다.(기본값: 600px)</description>
+			</var>
+			<var name="slide_pagination" type="select">
+				<title xml:lang="ko">페이지 표시</title>
+				<options value="true">
+					<title xml:lang="ko">표시</title>
+				</options>
+				<options value="false">
+					<title xml:lang="ko">표시 안 함</title>
+				</options>
+				<description xml:lang="ko">슬라이드 하단에 페이지를 표시합니다.(기본값: 표시)</description>
+			</var>
+			<var name="slide_time" type="text">
+				<title xml:lang="ko">슬라이드 전환 시간</title>
+				<description xml:lang="ko">슬라이드 이미지가 다음으로 전환되는 시간을 설정합니다. 1초=1000 입니다.(기본값: 3000)</description>
+			</var>
+			<var name="slide_loader" type="select">
+				<title xml:lang="ko">Loader 표시</title>
+				<options value="none">
+					<title xml:lang="ko">표시 안 함</title>
+				</options>
+				<options value="bar">
+					<title xml:lang="ko">bar</title>
+				</options>
+				<options value="pie">
+					<title xml:lang="ko">pie</title>
+				</options>
+				<description xml:lang="ko">슬라이드 이미지가 다음으로 전환될 때까지의 시간을 보여줍니다.(기본값: 표시 안함), pie는 IE 9 이상 지원합니다.</description>
+			</var>
+			<var name="slide_fx" type="select">
+				<title xml:lang="ko">슬라이드 전환 효과</title>
+				<options value="simpleFade">
+					<title xml:lang="ko">기본값</title>
+				</options>
+				<options value="mosaic">
+					<title xml:lang="ko">mosaic</title>
+				</options>
+				<options value="stampede">
+					<title xml:lang="ko">stampede</title>
+				</options>
+				<options value="random">
+					<title xml:lang="ko">랜덤</title>
+				</options>
+				<description xml:lang="ko">슬라이드 이미지가 다음으로 전환될 때의 효과를 설정합니다.</description>
 			</var>
 			<var name="slide_img1" type="image">
 				<title xml:lang="ko">슬라이드 이미지 1</title>
