@@ -42,7 +42,7 @@
 .main_content .main3 .cont{font-size:15px;line-height:27px;}
 .main_content .main3 ul{overflow:hidden;margin-top:38px;padding:0 20px}
 .main_content .main3 li{float:left;width:25%;height:480px}
-.main_content .main3 li .fe_box{height:478px;margin:0 10px;padding:0 20px;border:1px solid #333;background-color:#f6f6f6;text-align:center;-webkit-transition: all .2s ease-out;-moz-transition: all .2s ease-out;-o-transition: all .2s ease-out;transition: all .2s ease-out}
+.main_content .main3 li .fe_box{height:478px;margin:0 10px;padding:0 20px;background-color:#f6f6f6;text-align:center;-webkit-transition: all .2s ease-out;-moz-transition: all .2s ease-out;-o-transition: all .2s ease-out;transition: all .2s ease-out}
 
 .main_content .main3 .fe_box h2{font-size:21px;color:#555;font-weight:normal}
 .main_content .main3 .fe_box p{margin-bottom:80px;font-size:15px;line-height:24px;color:#f6f6f6}
