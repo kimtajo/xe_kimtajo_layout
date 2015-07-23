@@ -4,7 +4,7 @@
 .content + .main_content { padding-top: 0;}
 .main_content section{width:1200px;margin:0 auto}
 .main_content .tit{padding-bottom:32px;font-size:40px;color:#333;font-weight:700;letter-spacing:1px;line-height:50px}
-.main_content .noti{display:block;padding:28px 0 0;margin:0 0 12px;font-size:20px;font-weight:bold;color:#cda25a;letter-spacing:1px;line-height:20px}
+.main_content .noti{display:block;padding:0px 0 0;margin:0 0 12px;font-size:20px;font-weight:bold;color:#cda25a;letter-spacing:1px;line-height:20px}
 .main_content .intro{width:408px;height:600px;padding-right:792px;background:url(../img/intro.png) 100% 100% no-repeat}
 .main_content .intro .cont{padding-bottom:37px;font-size:15px;font-weight:400;color:#888;line-height:27px}
 .main_content .intro .btn_start{display:inline-block;margin:50px 0;padding:0 27px;height:40px;border:2px solid #cda25a;background-color:#fff;font-size:13px;line-height:40px;letter-spacing:1px;color:#cda25a;-webkit-transition: all .2s ease-in-out;-moz-transition: all .2s ease-in-out;-ms-transition: all .2s ease-in-out;-o-transition: all .2s ease-in-out;transition: all .2s ease-in-out}
@@ -20,7 +20,7 @@
 .main_content .main1 .button-area .btn_item {font-size: 18px; letter-spacing: 2px;}
 
 /* section.main2 */
-.main_content .main2{padding-top:80px;padding-bottom: 80px;}
+.main_content .main2 {padding-top:40px;}
 .main_content .main2 ul{padding-top:27px}
 .main_content .main2 li{position:relative;float:left;width:314px;min-height:140px;padding:0 0 0 70px;margin:0 0 30px 0}
 .main_content .main2 h2{padding:7px 24px 13px 0;font-size:17px;font-weight:normal;line-height:23px;color:#333}
@@ -35,7 +35,7 @@
 .main_content .main2 p a:focus{color:#cda25a;border-bottom:1px solid #cda25a}
 
 /* section.main3 */
-.main_content .main3{width:100%;margin:0;height:800px;padding-top:80px;}
+.main_content .main3{width:100%;margin:0;height:800px;padding-top:40px;}
 .main_content .main3 .noti,
 .main_content .main3 .tit,
 .main_content .main3 .cont{width:1200px;margin-left:auto;margin-right:auto}
@@ -59,7 +59,7 @@
 
 
 /*section.main4*/
-.main_content .main4{height:344px;padding-top:80px}
+.main_content .main4{height:344px;padding-top:40px}
 .main_content .main4 ul{overflow:hidden;padding:40px 0}
 .main_content .main4 li{position:relative;float:left;width:180px;margin-left:24px;padding:4px 0 0 102px;min-height:78px}
 .main_content .main4 li:first-child{margin-left:0}
