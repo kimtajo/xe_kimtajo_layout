@@ -330,8 +330,16 @@
 				<title xml:lang="ko">사이트 로고 링크 주소</title>
 			</var>
 			<var name="menu_text_color" type="text">
-				<title xml:lang="ko">메뉴 색상</title>
+				<title xml:lang="ko">메뉴 글씨 색상</title>
 				<description xml:lang="ko">메뉴의 글씨 색상을 입력합니다.(기본값: #888)</description>
+			</var>
+			<var name="sub_menu_text_color" type="text">
+				<title xml:lang="ko">서브 메뉴 글씨 색상</title>
+				<description xml:lang="ko">마우스 오버 시 서브 메뉴의 글씨 색상을 입력합니다.(기본값: #9d9d9d)</description>
+			</var>
+			<var name="menu_background_color" type="text">
+				<title xml:lang="ko">서브 메뉴 배경</title>
+				<description xml:lang="ko">마우스 오버 시 서브 메뉴의 배경 색상을 입력합니다.(기본값: #333)</description>
 			</var>
 
 		</group>

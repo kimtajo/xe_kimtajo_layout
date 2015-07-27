@@ -215,9 +215,16 @@
 		.main_content .main2 p a:active,
 		.main_content .main2 p a:focus{color:{$_custom_color};border-bottom:1px solid {$_custom_color}}
 		.main_content .main3 .fe_box a:hover{color:{$_custom_color}}
-		.main_content .main3 .fe_box.on{background-color{$_custom_color}}
+		.main_content .main3 .fe_box.on{background-color:{$_custom_color}}
 		.main_content .main4 .ico{background-color:{$_custom_color};}
 
+	</style>
+</block>
+<block cond="$layout_info->sub_menu_text_color">
+	<style type="text/css">
+		.gnb>ul .depth2 a{
+			color:{$layout_info->sub_menu_text_color};
+		}
 	</style>
 </block>
 
@@ -349,10 +356,10 @@
 					<li loop="$GNB->list => $key1, $val1">
 						<a href="{$val1['href']}" target="_blank"|cond="$val1['open_window'] == 'Y'" style="color:{$layout_info->menu_text_color}"|cond="!$val1['selected']">{$val1['link']}</a>
 						<block cond="$val1['selected']">{@ $_selected_menu = $val1}</block>
-						<ul cond="$val1['list']" class="depth2">
+						<ul cond="$val1['list']" class="depth2" style="background-color:{$layout_info->menu_background_color};"|cond="$layout_info->menu_background_color">
 							<li loop="$val1['list'] => $key2, $val2" class="more"|cond="$val2['list']">
 								<a href="{$val2['href']}" target="_blank"|cond="$val2['open_window'] == 'Y'">{$val2['link']}</a>
-								<ul cond="$val2['list']" class="depth3">
+								<ul cond="$val2['list']" class="depth3" style="background-color:{$layout_info->menu_background_color};"|cond="$layout_info->menu_background_color">
 									<li loop="$val2['list'] => $key3, $val3">
 										<a href="{$val3['href']}" target="_blank"|cond="$val3['open_window'] == 'Y'">{$val3['link']}</a>
 									</li>
@@ -488,7 +495,7 @@
 		<!-- END MAIN CONTENT -->
 
 		<!-- CONTENT -->
-		<div class="content" id="content">
+		<div class="content" id="content" style="width:1200px;"|cond="!$_selected_menu['list']">
 			{$content}
 		</div>
 
