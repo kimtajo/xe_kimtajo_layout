@@ -222,7 +222,8 @@
 </block>
 <block cond="$layout_info->sub_menu_text_color">
 	<style type="text/css">
-		.gnb>ul .depth2 a{
+		.gnb>ul .depth2 a,
+		.header>.side>ul .ly a{
 			color:{$layout_info->sub_menu_text_color};
 		}
 	</style>
@@ -318,7 +319,7 @@
 							<!--@end-->
 						</a>
 						<div class="ly ly_login">
-							<ul>
+							<ul style="background-color:{$layout_info->menu_background_color};"|cond="$layout_info->menu_background_color">
 								<li loop="$logged_info->menu_list => $key, $val"><a href="{getUrl('act', $key, 'member_srl', '', 'page', '')}">{Context::getLang($val)}</a></li>
 								<li><a href="{getUrl('act', 'dispMemberLogout')}">{$lang->cmd_logout}</a></li>
 							</ul>
