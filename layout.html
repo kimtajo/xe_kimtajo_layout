@@ -218,6 +218,7 @@
 		.main_content .main3 .fe_box.on{background-color:{$_custom_color}}
 		.main_content .main4 .ico{background-color:{$_custom_color};}
 
+		.footer .bottom a:hover, .footer .bottom a:focus, .footer .bottom a:active {color:{$_custom_color};}
 	</style>
 </block>
 <block cond="$layout_info->sub_menu_text_color">
@@ -227,7 +228,14 @@
 		}
 	</style>
 </block>
-
+<block cond="$layout_info->copyright_text_color">
+	<style type="text/css">
+		.footer .bottom,
+		.footer .bottom a{
+			color:{$layout_info->copyright_text_color};
+		}
+	</style>
+</block>
 
 <!--// JS -->
 <load target="./js/jquery.easing.js" />
@@ -538,7 +546,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="f_cr_area">
+		<div class="f_cr_area" style="background-color: {$layout_info->copyright_background_color}"|cond="$layout_info->copyright_background_color">
 			<p class="bottom">
 				<span class="copyright" style="float: left;">
 				<!--@if(!$_sample_footer)-->

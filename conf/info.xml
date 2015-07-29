@@ -994,6 +994,14 @@
 			<var name="footer_copyright" type="textarea">
 				<title xml:lang="ko">카피라이트 내용</title>
 			</var>
+			<var name="copyright_background_color" type="text">
+				<title xml:lang="ko">Copyright 배경 색상</title>
+				<description xml:lang="ko">푸터의 배경색을 지정합니다.(기본값: #555)</description>
+			</var>
+			<var name="copyright_text_color" type="text">
+				<title xml:lang="ko">Copyright 글씨 색상</title>
+				<description xml:lang="ko">푸터의 글씨 색상을 입력합니다.(기본값: #f1f1f1)</description>
+			</var>
 		</group>
 		<!-- FOOTER 끝 -->
 	</extra_vars>
