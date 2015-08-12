@@ -1,5 +1,9 @@
 <!--// META -->
-{Context::addHtmlHeader('<meta name="viewport" content="width=1240">')}
+{@
+Context::addHtmlHeader('<meta http-equiv="X-UA-Compatible" content="IE=edge" />');
+Context::set("admin_bar","false");
+if(!$_COOKIE['fakeM']) Context::addHtmlHeader('<meta name="viewport" content="width=device-width, initial-scale=1" />');
+}
 <!--// LANG -->
 <load target="./lang" />
 
@@ -379,6 +383,11 @@
 				</ul>
 			</nav>
 			<!-- /GNB -->
+			<!-- mobile GNB START -->
+
+			<nav cond="$GNB->list" class="gnb_button"><a href="#" class="ico"><i class="xi-bars"></i></a></nav>
+
+			<!-- mobile GNB END -->
 		</header>
 	</div>
 	<!-- END:HEADER -->

@@ -18,8 +18,42 @@ a:hover,a:active,a:focus{text-decoration:none}
 .skip>a:focus{height:auto}
 
 /* Layout */
-.container{min-width:1240px;background-color:#fff}
-.header{position:relative;z-index:2;width:1200px;height:100%;margin:0 auto;zoom:1}
+
+@media screen and (min-width:769px) {
+	.container{min-width: 1240px;}
+	.header{width:1200px;}
+	.header>h1 {padding:20px 0;}
+	.mobile_gnb{ display: none;}
+}
+/* 아이패드2 */
+@media screen and (max-width:768px) {
+	.container{min-width: 768px;}
+	.header{width:100%;}
+	.gnb, .side{  display: none;  }
+	.header>h1 {padding:20px 10px;}
+	.gnb_button{float:right;position:relative;z-index:1;height:100%;padding:23px 20px 0px 0px;font-size:50px;display: block;}
+	.mobile_gnb{float:right;position:relative;z-index:1;height:100%;padding:23px 20px 0px 0px;display: block;}
+}
+@media screen and (max-width:480px){
+	.container{max-width: 480px;}
+	.header{width:100%;}
+	.gnb .side{  display: none;  }
+	.header>h1 {padding:20px 5px;}
+	.gnb_button{float:right;position:relative;z-index:1;height:100%;padding:23px 20px 0px 0px;font-size:50px;display: block;}
+	.mobile_gnb{float:right;position:relative;z-index:1;height:100%;padding:23px 20px 0px 0px;display: block;}
+}
+
+@media screen and (max-width:320px) {
+	.container{max-width: 320px;}
+	.header{width:100%;}
+	.gnb .side{  display: none;  }
+	.header>h1 {padding:20px 5px;}
+	.gnb_button{float:right;position:relative;z-index:1;height:100%;padding:23px 20px 0px 0px;font-size:50px;display: block;}
+	.mobile_gnb{float:right;position:relative;z-index:1;height:100%;padding:23px 20px 0px 0px;display: block;}
+}
+
+/*.container{min-width:1240px;background-color:#fff}*/
+.header{position:relative;z-index:2;height:100%;margin:0 auto;zoom:1}
 .header>.side{float:right;z-index:2;margin:39px 0 0 22px;line-height:20px}
 .visual{overflow:hidden;position:relative;z-index:1;width:100%}
 .body{position:relative;padding:30px 0}
@@ -33,7 +67,7 @@ a:hover,a:active,a:focus{text-decoration:none}
 .content img{max-width:100%;height:auto}
 
 /* Header */
-.header>h1{float:left;padding:20px 0;margin-right:32px;line-height:60px;}
+.header>h1{float:left;margin-right:32px;line-height:60px;}
 .header>h1 img{vertical-align:middle; max-height:50px; }
 
 /* Fixed Header */
