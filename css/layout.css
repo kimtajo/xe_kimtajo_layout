@@ -27,7 +27,7 @@ a:hover,a:active,a:focus{text-decoration:none}
 .body.fixed-width {width:1200px;margin:0 auto}
 
 .header:after,.body:after{display:block;clear:both;content:''}
-.content{zoom:1}
+.content{zoom:1;margin:0 auto;}
 .content:after{display:block;clear:both;content:''}
 .content>:first-child{margin-top:0}
 .content img{max-width:100%;height:auto}
