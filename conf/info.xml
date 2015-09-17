@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout version="0.2">
 	<title xml:lang="ko">XEDITION edited by Kim Tajo</title>
-	<description xml:lang="ko">XE 1.8 기본 테마 수정버전</description>
-	<version>1.23</version>
-	<date>2015-08-18</date>
+	<description xml:lang="ko">XE 1.8 기본 테마 수정버전(1.24)</description>
+	<version>1.24</version>
+	<date>2015-09-17</date>
 	<author email_address="gptjdwkd891@gmail.com" link="">
 		<name xml:lang="ko">김타조</name>
 	</author>
