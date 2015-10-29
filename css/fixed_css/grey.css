@@ -53,3 +53,7 @@
 .main_content .main4 .ico:active,
 .main_content .main4 .ico:focus{background-color:#ddd}
 .main_content .main4 .ico{background-color:#9E9E9E;color:#444}
+
+@media all and (max-width: 479px) {
+    .main_content .main3 li .fe_box { background-color:#9E9E9E; color:#444;}
+}

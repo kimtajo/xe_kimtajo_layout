@@ -47,3 +47,7 @@
 .main_content .main3 .fe_box.on{background-color:#F9A825}
 
 .main_content .main4 .ico{background-color:#F9A825;}
+
+@media all and (max-width: 479px) {
+    .main_content .main3 li .fe_box { background-color:#F9A825; }
+}

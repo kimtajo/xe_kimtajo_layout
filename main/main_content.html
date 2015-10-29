@@ -66,7 +66,7 @@
             <block cond="!$layout_info->main2_row1_col3_content">{@ $layout_info->main2_row1_col3_content = "내용을 입력하세요."}</block>
         </block>
         <block cond="$layout_info->main2_list_cnt == 2">
-            {@ $_main2_height = '480px';}
+            {@ $_main2_height = '500px';}
             <block cond="!$layout_info->main2_row2_col1_ico">{@ $layout_info->main2_row2_col1_ico = "xi-plus-square"}</block>
             <block cond="!$layout_info->main2_row2_col2_ico">{@ $layout_info->main2_row2_col2_ico = "xi-plus-square"}</block>
             <block cond="!$layout_info->main2_row2_col3_ico">{@ $layout_info->main2_row2_col3_ico = "xi-plus-square"}</block>
@@ -210,7 +210,13 @@
 </block>
 <!-- 메인 설정 끝 -->
 <style type="text/css">
-    .main_content .main3 .fe_box .ico{display:inline-block;width:70px;height:70px;margin:162px 0 27px;background-color:#cda25a;background:url({$layout_info->main3_image}) 0 0 no-repeat;text-align:center;font-size:60px;line-height:70px}
+    .main_content .main2 {
+        height:{$_main2_height};
+    }
+    .bg-holder{background-image:url('{$layout_info->main1_image}');}
+    .main_content .main3 .fe_box .ico{
+        display:inline-block;width:70px;height:70px;margin:162px 0 27px;background-color:#cda25a;background:url({$layout_info->main3_image}) 0 0 no-repeat;
+        text-align:center;font-size:60px;line-height:70px}
     .main_content .main3 .fe_box.on .ico{background-color:#f6f6f6;background:url({$layout_info->main3_image}) 0 -70px no-repeat}
     .main_content .main3 .fe_box .ico2{background-position:-70px 0}
     .main_content .main3 .fe_box .ico3{background-position:-140px 0}
@@ -218,12 +224,56 @@
     .main_content .main3 .fe_box.on .ico2{background-position:-70px -70px}
     .main_content .main3 .fe_box.on .ico3{background-position:-140px -70px}
     .main_content .main3 .fe_box.on .ico4{background-position:-210px -70px}
+    @media all and (max-width: 479px) {
+        .main_content .main2{height:auto;}
+        .main_content .main3 .fe_box .ico {
+            display: inline-block;
+            width: 70px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 70px;
+            margin: 0;
+            background: url({$layout_info->main3_image}) 0 -70px no-repeat;
+        }
+        .main_content .main3 .fe_box h2 {
+            color: #f6f6f6;
+            font-weight: normal;
+            padding-left: 80px
+        }
+        .main_content .main3 .fe_box a {
+            height: 30px;
+            padding: 0 20px;
+            line-height: 30px;
+            float: right;
+        }
+        .main_content .main3 .fe_bottom {
+            padding-left: 80px;
+            overflow: hidden;
+            position: static;
+        }
+        .main_content .main3 .fe_box p {
+            margin-bottom: 40px;
+            margin-top: 10px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+        .main_content .main3 .fe_box .ico2 {
+            background-position: -70px -70px
+        }
+        .main_content .main3 .fe_box .ico3 {
+            background-position: -140px -70px
+        }
+        .main_content .main3 .fe_box .ico4 {
+            background-position: -210px -70px
+        }                                                                                                                                                                                                                                                                                                              .main_content .main3 .fe_box h2 {     color: #f6f6f6;     font-weight: normal;     padding-left: 80px } .main_content .main3 .fe_box a {     height: 30px;     padding: 0 20px;     line-height: 30px;     float: right; } .main_content .main3 .fe_bottom {     padding-left: 80px;     overflow: hidden;     position: static; } .main_content .main3 .fe_box p {     margin-bottom: 40px;     margin-top: 10px;     font-size: 13px;     line-height: 20px; } .main_content .main3 .fe_box .ico2 {     background-position: -70px -70px } .main_content .main3 .fe_box .ico3 {     background-position: -140px -70px } .main_content .main3 .fe_box .ico4 {     background-position: -210px -70px }
+    }
 </style>
 <div class="main_content">
 
     <!-- main 1 시작 -->
     <block cond="$layout_info->use_main1_section === 'Y'">
-        <section class="main1" style="background-image:url('{$layout_info->main1_image}');">
+        <section class="main1 bg-holder" data-width="1240" data-height="500">
             <h1 style="color:{$layout_info->main1_font_color};">{$layout_info->main1_text}</h1>
             <div class="button-area">
                 <block cond="$layout_info->use_main1_btn1 === 'Y'">
@@ -239,7 +289,7 @@
 
     <!-- main 2 시작 -->
     <block cond="$layout_info->use_main2_section === 'Y'">
-        <section class="main2" style="height:{$_main2_height};">
+        <section class="main2">
             <span class="noti">{$layout_info->main2_text}</span>
             <h1 class="tit">{$layout_info->main2_large_text}</h1>
             <ul>
