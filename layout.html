@@ -216,6 +216,11 @@
 		.header>.side>ul .ly a{
 			color:{$layout_info->sub_menu_text_color};
 		}
+		@media all and (max-width: 479px) {
+			.footer .f_cr_area .mobile-footer-member li a{
+				color:{$layout_info->sub_menu_text_color};
+			}
+		}
 	</style>
 </block>
 <block cond="$layout_info->copyright_text_color">
@@ -226,7 +231,29 @@
 		}
 	</style>
 </block>
+<block cond="$layout_info->mobile_login_border_color">
+	<style>
+		@media all and (max-width: 479px) {
+			.footer .f_cr_area .mobile-footer-member {
+				border-top-color:{$layout_info->mobile_login_border_color};
+			}
+			.footer .f_cr_area .mobile-footer-member li{
+				border-left-color:{$layout_info->mobile_login_border_color};
+			}
+		}
+	</style>
+</block>
 
+<block cond="$layout_info->menu_background_color">
+	<style>
+		@media all and (min-width: 480px) {
+			.gnb > ul .depth2,
+			.gnb > ul .depth3 {
+			background-color:{$layout_info->menu_background_color};
+			}
+		}
+	</style>
+</block>
 <!--// JS -->
 <load target="./js/jquery.easing.js" />
 <load cond="$_enable_slide" target="./js/idangerous.swiper.min.js" />
@@ -347,10 +374,10 @@
 					<li loop="$GNB->list => $key1, $val1">
 						<a href="{$val1['href']}" target="_blank"|cond="$val1['open_window'] == 'Y'" style="color:{$layout_info->menu_text_color}"|cond="!$val1['selected']">{$val1['link']}</a>
 						<block cond="$val1['selected']">{@ $_selected_menu = $val1}</block>
-						<ul cond="$val1['list']" class="depth2" style="background-color:{$layout_info->menu_background_color};"|cond="$layout_info->menu_background_color">
+						<ul cond="$val1['list']" class="depth2">
 							<li loop="$val1['list'] => $key2, $val2" class="more"|cond="$val2['list']">
 								<a href="{$val2['href']}" target="_blank"|cond="$val2['open_window'] == 'Y'">{$val2['link']}</a>
-								<ul cond="$val2['list']" class="depth3" style="background-color:{$layout_info->menu_background_color};"|cond="$layout_info->menu_background_color">
+								<ul cond="$val2['list']" class="depth3">
 									<li loop="$val2['list'] => $key3, $val3">
 										<a href="{$val3['href']}" target="_blank"|cond="$val3['open_window'] == 'Y'">{$val3['link']}</a>
 									</li>

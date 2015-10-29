@@ -938,6 +938,11 @@
 				<title xml:lang="ko">Copyright 글씨 색상</title>
 				<description xml:lang="ko">푸터의 글씨 색상을 입력합니다.(기본값: #f1f1f1)</description>
 			</var>
+			<var name="mobile_login_border_color" type="text">
+				<title xml:lang="ko">(모바일용)로그인 박스 테두리 색상</title>
+				<description xml:lang="ko">모바일 페이지에서 노출되는 로그인 박스 테두리의 색상을 입력합니다.(기본값: #444)</description>
+			</var>
+
 		</group>
 		<!-- FOOTER 끝 -->
 	</extra_vars>
