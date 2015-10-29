@@ -217,10 +217,6 @@
 					<title xml:lang="ko">사용 안 함</title>
 				</options>
 			</var>
-			<var name="slide_height" type="text">
-				<title xml:lang="ko">슬라이드 높이</title>
-				<description xml:lang="ko">슬라이드 높이를 px까지 입력합니다.(기본값: 600px)</description>
-			</var>
 			<var name="slide_time" type="text">
 				<title xml:lang="ko">슬라이드 전환 시간</title>
 				<description xml:lang="ko">슬라이드 이미지가 다음으로 전환되는 시간을 설정합니다. 1초=1000 입니다.(기본값: 3000)</description>
@@ -272,13 +268,7 @@
 			</var>
 
 			<var name="logo_img" type="image">
-				<title xml:lang="ko">기본형 로고 이미지</title>
-			</var>
-			<var name="logo_img_transparent" type="image">
-				<title xml:lang="ko">투명형 로고 이미지</title>
-			</var>
-			<var name="logo_img_magazine" type="image">
-				<title xml:lang="ko">매거진형 로고 이미지</title>
+				<title xml:lang="ko">로고 이미지</title>
 			</var>
 			<var name="logo_text" type="text">
 				<title xml:lang="ko">사이트 로고 문자</title>
@@ -313,12 +303,6 @@
 				<title xml:lang="ko">메인형 메뉴 타입</title>
 				<options value="basic">
 					<title xml:lang="ko">기본형 : FIXED+SHRINKING</title>
-				</options>
-				<options value="startup">
-					<title xml:lang="ko">투명형 : TRANSPARENT HEADER</title>
-				</options>
-				<options value="magazine">
-					<title xml:lang="ko">매거진형 : HEADER WITH BOTTOM MENU</title>
 				</options>
 			</var>
 			<var name="use_main" type="select">
@@ -875,15 +859,6 @@
 				</options>
 				<options value="basic_regular">
 					<title xml:lang="ko">기본형 : REGULAR HEADER</title>
-				</options>
-				<options value="onepage_parallax">
-					<title xml:lang="ko">투명형 : REGULAR RARALLAX</title>
-				</options>
-				<options value="magazine_simple">
-					<title xml:lang="ko">매거진형 : SIMPLE-TEXT HEADER</title>
-				</options>
-				<options value="magazine_regular">
-					<title xml:lang="ko">매거진형 : REGULAR HEADER</title>
 				</options>
 			</var>
 			<var name="menu_fixed" type="select">
