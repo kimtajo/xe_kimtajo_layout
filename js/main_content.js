@@ -1,7 +1,7 @@
 (function($){
   "user strict";
   $(function(){
-    $('.main1').parallax('50%', 0.4);
+    //$('.main1').parallax('50%', 0.4);
 
     $('.fe_box').on('mouseenter mouseleave',function(e){
       $this = $(this);
@@ -31,7 +31,7 @@
     var firstTop;
     $this.each(function() {
       if($this.hasClass('main1')){
-        firstTop = $this.offset().top + 100;
+        firstTop = $this.offset().top + 600;
       } else {
         firstTop = $this.offset().top;
       }

@@ -200,8 +200,10 @@
 </block>
 <block cond="!$_selected_menu['list']">
 	<style>
-		.content {
-			min-width:1200px;
+		@media all and (min-width: 480px) {
+			.visual .content {
+				min-width: 1200px;
+			}
 		}
 		@media all and (max-width: 479px) {
 			.content {
@@ -259,7 +261,8 @@
 <load cond="$_enable_slide" target="./js/idangerous.swiper.min.js" />
 <load target="./js/layout.js" />
 <load target="./js/main_content.js" />
-<load target="./js/jquery.parallax-scroll.min.js" />
+<load target="./js/jquery.parallax-scroll.js" />
+<load target="./js/SmoothScroll.min.js" />
 
 <!-- LAYER POPUP -->
 <div cond="$layout_info->use_layer_popup === 'Y' && $layout_info->layout_type =='main' && $_enable_main">
