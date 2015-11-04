@@ -213,7 +213,7 @@
     .main_content .main2 {
         height:{$_main2_height};
     }
-    .bg-holder{background-image:url('{$layout_info->main1_image}');}
+
     .main_content .main3 .fe_box .ico{
         display:inline-block;width:70px;height:70px;margin:162px 0 27px;background-color:#cda25a;background:url({$layout_info->main3_image}) 0 0 no-repeat;
         text-align:center;font-size:60px;line-height:70px}
@@ -225,7 +225,6 @@
     .main_content .main3 .fe_box.on .ico3{background-position:-140px -70px}
     .main_content .main3 .fe_box.on .ico4{background-position:-210px -70px}
     @media all and (max-width: 479px) {
-        .bg-holder{}
         .main_content .main2{height:auto;}
         .main_content .main3 .fe_box .ico {
             display: inline-block;
@@ -274,8 +273,16 @@
 
     <!-- main 1 시작 -->
     <block cond="$layout_info->use_main1_section === 'Y'">
+        <style>
+            .bg-holder{background-image:url('{$layout_info->main1_image}');}
+        </style>
+        <style cond="$layout_info->main1_mobile_image">
+            @media all and (max-width: 479px) {
+                .bg-holder{background-image:url('{$layout_info->main1_mobile_image}');}
+            }
+        </style>
         <section class="main1 bg-holder" data-width="1240" data-height="500">
-            <h1 style="color:{$layout_info->main1_font_color};">{$layout_info->main1_text}</h1>
+            <h1 style="color:{$layout_info->main1_font_color};">{$layout_info->main1_text}<br />&nbsp;</h1>
             <div class="button-area">
                 <block cond="$layout_info->use_main1_btn1 === 'Y'">
                     <a class="btn_item" target="{$layout_info->main1_btn1_target}" href="{$layout_info->main1_btn1_url}">{$layout_info->main1_btn1_text}</a>

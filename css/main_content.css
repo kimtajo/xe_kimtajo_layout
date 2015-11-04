@@ -48,6 +48,10 @@
      text-transform: uppercase;
 
 }
+.bg-holder{
+    background-image: url('../img/bg_stat.jpg');
+}
+
 .main_content .main1 h1 a {
 	color: #FFF;
 

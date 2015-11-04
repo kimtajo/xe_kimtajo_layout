@@ -332,6 +332,10 @@
 				<title xml:lang="ko">메인 1 이미지</title>
 				<description xml:lang="ko">메인 1의 이미지를 선택합니다.</description>
 			</var>
+			<var name="main1_mobile_image" type="image">
+				<title xml:lang="ko">메인 1 모바일 이미지</title>
+				<description xml:lang="ko">메인 1의 모바일 이미지를 선택합니다.</description>
+			</var>
 			<var name="main1_font_color" type="text">
 				<title xml:lang="ko">메인 1 제목 색상</title>
 				<description xml:lang="ko">메인 1 제목 색상을 입력합니다.(기본값: #f6f6f6)</description>

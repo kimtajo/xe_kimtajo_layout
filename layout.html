@@ -491,18 +491,19 @@
 		</nav>
 		<!-- /LNB -->
 
+		<!-- CONTENT -->
+		<div class="content" id="content">
+			{$content}
+		</div>
+		<!-- /CONTENT -->
+
 		<!-- MAIN CONTENT -->
 		<block cond="$layout_info->use_main === 'Y' && $layout_info->layout_type === 'main' && $_enable_main" class="visual">
 			<include target="./main/main_content.html" />
 		</block>
 		<!-- END MAIN CONTENT -->
 
-		<!-- CONTENT -->
-		<div class="content" id="content">
-			{$content}
-		</div>
 
-		<!-- /CONTENT -->
 	</div>
 	<!-- END:BODY -->
 
