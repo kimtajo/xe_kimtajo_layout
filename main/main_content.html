@@ -276,11 +276,6 @@
         <style>
             .bg-holder{background-image:url('{$layout_info->main1_image}');}
         </style>
-        <style cond="$layout_info->main1_mobile_image">
-            @media all and (max-width: 479px) {
-                .bg-holder{background-image:url('{$layout_info->main1_mobile_image}');}
-            }
-        </style>
         <section class="main1 bg-holder" data-width="1240" data-height="500">
             <h1 style="color:{$layout_info->main1_font_color};">{$layout_info->main1_text}<br />&nbsp;</h1>
             <div class="button-area">
