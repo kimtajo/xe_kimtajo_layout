@@ -5,7 +5,8 @@
     border-radius: 10px 10px 10px 10px;
     color: #111;
     display: none;
-    min-width: 1000px;
+    min-width: 400px;
+    max-width: 1000px;
     padding: 25px;
     font-size:medium;
 }
