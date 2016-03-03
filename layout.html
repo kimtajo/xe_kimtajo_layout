@@ -426,37 +426,52 @@
 			<include target="./demo/demo_slide.html" />
 			<!--@else-->
 			<div cond="$layout_info->slide_img1" style="background-image:url('{$layout_info->slide_img1}');" class="swiper-slide">
-				<div cond="$layout_info->slide_text1">
+				<div cond="$layout_info->slide_text1 || $layout_info->slide_header1">
 					<div>
-						{nl2br($layout_info->slide_text1)}
+						<h1 cond="$layout_info->slide_header1">{$layout_info->slide_header1}</h1>
+						<p cond="$layout_info->slide_text1">
+							{nl2br($layout_info->slide_text1)}
+						</p>
 					</div>
 				</div>
 			</div>
 			<div cond="$layout_info->slide_img2" style="background-image:url('{$layout_info->slide_img2}');" class="swiper-slide">
-				<div cond="$layout_info->slide_text2">
+				<div cond="$layout_info->slide_text2 || $layout_info->slide_header2">
 					<div>
-						{nl2br($layout_info->slide_text2)}
+						<h1 cond="$layout_info->slide_header2">{$layout_info->slide_header2}</h1>
+						<p cond="$layout_info->slide_text2">
+							{nl2br($layout_info->slide_text2)}
+						</p>
 					</div>
 				</div>
 			</div>
 			<div cond="$layout_info->slide_img3" style="background-image:url('{$layout_info->slide_img3}');" class="swiper-slide">
-				<div cond="$layout_info->slide_text3">
+				<div cond="$layout_info->slide_text3 || $layout_info->slide_header3">
 					<div>
-						{nl2br($layout_info->slide_text3)}
+						<h1 cond="$layout_info->slide_header3">{$layout_info->slide_header3}</h1>
+						<p cond="$layout_info->slide_text3">
+							{nl2br($layout_info->slide_text3)}
+						</p>
 					</div>
 				</div>
 			</div>
 			<div cond="$layout_info->slide_img4" style="background-image:url('{$layout_info->slide_img4}');" class="swiper-slide">
-				<div cond="$layout_info->slide_text4">
+				<div cond="$layout_info->slide_text4 || $layout_info->slide_header4">
 					<div>
-						{nl2br($layout_info->slide_text4)}
+						<h1 cond="$layout_info->slide_header4">{$layout_info->slide_header4}</h1>
+						<p cond="$layout_info->slide_text4">
+							{nl2br($layout_info->slide_text4)}
+						</p>
 					</div>
 				</div>
 			</div>
 			<div cond="$layout_info->slide_img5" style="background-image:url('{$layout_info->slide_img5}');" class="swiper-slide">
-				<div cond="$layout_info->slide_text5">
+				<div cond="$layout_info->slide_text5 || $layout_info->slide_header5">
 					<div>
-						{nl2br($layout_info->slide_text5)}
+						<h1 cond="$layout_info->slide_header2">{$layout_info->slide_header5}</h1>
+						<p cond="$layout_info->slide_text5">
+							{nl2br($layout_info->slide_text5)}
+						</p>
 					</div>
 				</div>
 			</div>

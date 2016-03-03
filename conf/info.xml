@@ -224,11 +224,17 @@
 			<var name="slide_img1" type="image">
 				<title xml:lang="ko">슬라이드 이미지 1</title>
 			</var>
+			<var name="slide_header1" type="text">
+				<title xml:lang="ko">슬라이드 제목 1</title>
+			</var>
 			<var name="slide_text1" type="textarea">
 				<title xml:lang="ko">슬라이드 설명 1</title>
 			</var>
 			<var name="slide_img2" type="image">
 				<title xml:lang="ko">슬라이드 이미지 2</title>
+			</var>
+			<var name="slide_header2" type="text">
+				<title xml:lang="ko">슬라이드 제목 2</title>
 			</var>
 			<var name="slide_text2" type="textarea">
 				<title xml:lang="ko">슬라이드 설명 2</title>
@@ -236,17 +242,26 @@
 			<var name="slide_img3" type="image">
 				<title xml:lang="ko">슬라이드 이미지 3</title>
 			</var>
+			<var name="slide_header3" type="text">
+				<title xml:lang="ko">슬라이드 제목 3</title>
+			</var>
 			<var name="slide_text3" type="textarea">
 				<title xml:lang="ko">슬라이드 설명 3</title>
 			</var>
 			<var name="slide_img4" type="image">
 				<title xml:lang="ko">슬라이드 이미지 4</title>
 			</var>
+			<var name="slide_header4" type="text">
+				<title xml:lang="ko">슬라이드 제목 4</title>
+			</var>
 			<var name="slide_text4" type="textarea">
 				<title xml:lang="ko">슬라이드 설명 4</title>
 			</var>
 			<var name="slide_img5" type="image">
 				<title xml:lang="ko">슬라이드 이미지 5</title>
+			</var>
+			<var name="slide_header5" type="text">
+				<title xml:lang="ko">슬라이드 제목 5</title>
 			</var>
 			<var name="slide_text5" type="textarea">
 				<title xml:lang="ko">슬라이드 설명 5</title>
