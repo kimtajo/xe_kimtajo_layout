@@ -579,7 +579,7 @@ a:hover, a:active, a:focus {
 	content: ''
 }
 .visual.sub .bg_img {
-	display: none;
+	/*display: none;*/
 	position: absolute;
 	top: 0;
 	left: 0;

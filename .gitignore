@@ -49,3 +49,5 @@ crashlytics.properties
 crashlytics-build.properties
 
 *.zip
+
+stfp-config.json

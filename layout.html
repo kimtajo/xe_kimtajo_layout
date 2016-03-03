@@ -400,7 +400,7 @@
 		<!--@if($layout_info->use_sub_image == 'Y' && $layout_info->sub_image)-->
 		{@ $_subheader_img = $layout_info->sub_image}
 		{@ $_url = $layout_info->sub_image}
-		<!--@else-->
+		
 		{@ $_subheader_img = 'sub_banner_01.jpg'}
 		<block cond="$layout_info->menu_type_sub === 'onepage_parallax'">
 			{@ $_subheader_img = 'sub_banner_02.jpg'}
@@ -410,7 +410,7 @@
 
 		<!--@end-->
 
-		<span class="bg_img" style="background-image:url('{$_url}')"></span>
+		<span class="bg_img" style="background-image:url('{$_url}')" cond="$layout_info->use_sub_image ==='Y'"></span>
 		<span class="mask"></span>
 		<div class="sub_title">
 			<h1 style="color:{$layout_info->sub_title_color};">{$sub_header_title}</h1>
