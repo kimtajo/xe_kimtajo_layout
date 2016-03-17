@@ -157,7 +157,6 @@
 	<load cond="$layout_info->fixed_css=='teal'" target="./css/fixed_css/teal.css" />
 </block>
 <block cond="$_enable_slide">
-	<block cond="!$layout_info->slide_height">{@ $layout_info->slide_height='600px'}</block>
 	<block cond="!$layout_info->slide_time">{@ $layout_info->slide_time=3000}</block>
 </block>
 <style></style>
