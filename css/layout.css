@@ -711,10 +711,12 @@ a:hover, a:active, a:focus {
 .btn_top i {
 	line-height: 48px
 }
+/*
 .swiper-container {
 	height: 600px;
 	font-family: Raleway, '나눔바른고딕', NanumBarunGothic, ng, '돋움', Dotum, AppleGothic, Helvetica, serif;
-}
+}*/
+
 .swiper-container > div > div {
 	display: table;
 	height: 600px;
@@ -789,6 +791,7 @@ a:hover, a:active, a:focus {
 	background: #fff;
 	opacity: 1;
 }
+
 @media all and (max-width: 479px) {
 	body, html {
 		min-width: 100%;

@@ -221,6 +221,10 @@
 				<title xml:lang="ko">슬라이드 전환 시간</title>
 				<description xml:lang="ko">슬라이드 이미지가 다음으로 전환되는 시간을 설정합니다. 1초=1000 입니다.(기본값: 3000)</description>
 			</var>
+			<var name="slide_height" type="text">
+				<title xml:lang="ko">슬라이드 높이</title>
+				<description xml:lang="ko">슬라이드의 높이를 설정합니다.(기본값: 600px, 입력시 px 제외 하고 숫자만)</description>
+			</var>
 			<var name="slide_img1" type="image">
 				<title xml:lang="ko">슬라이드 이미지 1</title>
 			</var>
@@ -960,5 +964,104 @@
 
 		</group>
 		<!-- FOOTER 끝 -->
+
+		<!-- 배너 시작 -->
+		<group>
+			<title xml:lang="ko">Banner</title>
+			<var name="use_banner" type="select">
+				<title xml:lang="ko">배너 사용</title>
+				<options value="Y">
+					<title xml:lang="ko">사용함</title>
+				</options>
+				<options value="N">
+					<title xml:lang="ko">사용 안 함</title>
+				</options>
+			</var>
+			<var name="banner_img1" type="image">
+				<title xml:lang="ko">배너 1 이미지(최적 넓이: 240px)</title>
+			</var>
+			<var name="banner_img1_url" type="text">
+				<title xml:lang="ko">배너 1 이미지 링크</title>
+			</var>
+			<var name="banner_img1_url_target" type="select">
+				<title xml:lang="ko">배너 1 이미지 링크 새창 사용</title>
+				<description xml:lang="ko">서브 상단 이미지 사용 여부를 체크합니다.</description>
+				<options value="_self">
+					<title xml:lang="ko">사용 안 함</title>
+				</options>
+				<options value="_blank">
+					<title xml:lang="ko">새창 사용</title>
+				</options>
+			</var>
+
+			<var name="banner_img2" type="image">
+				<title xml:lang="ko">배너 1 이미지(최적 넓이: 240px)</title>
+			</var>
+			<var name="banner_img2_url" type="text">
+				<title xml:lang="ko">배너 1 이미지 링크</title>
+			</var>
+			<var name="banner_img2_url_target" type="select">
+				<title xml:lang="ko">배너 1 이미지 링크 새창 사용</title>
+				<description xml:lang="ko">서브 상단 이미지 사용 여부를 체크합니다.</description>
+				<options value="_self">
+					<title xml:lang="ko">사용 안 함</title>
+				</options>
+				<options value="_blank">
+					<title xml:lang="ko">새창 사용</title>
+				</options>
+			</var>
+
+			<var name="banner_img3" type="image">
+				<title xml:lang="ko">배너 1 이미지(최적 넓이: 240px)</title>
+			</var>
+			<var name="banner_img3_url" type="text">
+				<title xml:lang="ko">배너 1 이미지 링크</title>
+			</var>
+			<var name="banner_img3_url_target" type="select">
+				<title xml:lang="ko">배너 1 이미지 링크 새창 사용</title>
+				<description xml:lang="ko">서브 상단 이미지 사용 여부를 체크합니다.</description>
+				<options value="_self">
+					<title xml:lang="ko">사용 안 함</title>
+				</options>
+				<options value="_blank">
+					<title xml:lang="ko">새창 사용</title>
+				</options>
+			</var>
+
+			<var name="banner_img4" type="image">
+				<title xml:lang="ko">배너 1 이미지(최적 넓이: 240px)</title>
+			</var>
+			<var name="banner_img4_url" type="text">
+				<title xml:lang="ko">배너 1 이미지 링크</title>
+			</var>
+			<var name="banner_img4_url_target" type="select">
+				<title xml:lang="ko">배너 1 이미지 링크 새창 사용</title>
+				<description xml:lang="ko">서브 상단 이미지 사용 여부를 체크합니다.</description>
+				<options value="_self">
+					<title xml:lang="ko">사용 안 함</title>
+				</options>
+				<options value="_blank">
+					<title xml:lang="ko">새창 사용</title>
+				</options>
+			</var>
+
+			<var name="banner_img5" type="image">
+				<title xml:lang="ko">배너 1 이미지(최적 넓이: 240px)</title>
+			</var>
+			<var name="banner_img5_url" type="text">
+				<title xml:lang="ko">배너 1 이미지 링크</title>
+			</var>
+			<var name="banner_img5_url_target" type="select">
+				<title xml:lang="ko">배너 1 이미지 링크 새창 사용</title>
+				<description xml:lang="ko">서브 상단 이미지 사용 여부를 체크합니다.</description>
+				<options value="_self">
+					<title xml:lang="ko">사용 안 함</title>
+				</options>
+				<options value="_blank">
+					<title xml:lang="ko">새창 사용</title>
+				</options>
+			</var>
+		</group>
+		<!-- 배너 끝 -->
 	</extra_vars>
 </layout>

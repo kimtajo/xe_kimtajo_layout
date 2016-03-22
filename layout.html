@@ -27,6 +27,7 @@
 <block cond="!$layout_info->use_slide">{@ $layout_info->use_slide = 'Y'}</block>
 <block cond="!$layout_info->enable_intergration_search">{@ $layout_info->enable_intergration_search = 'Y'}</block>
 <block cond="!$layout_info->footer_copyright">{@ $layout_info->footer_copyright = 'Powered by KIM TAJO.'}</block>
+<block cond="!$layout_info->use_banner">{@ $layout_info->use_banner = "N"}</block>
 
 <block cond="!$layout_info->slide_img1">{@ $_sample_slide = true}</block>
 
@@ -129,7 +130,7 @@
 
 <!--// CSS -->
 <load target="./css/layout.css" />
-<load target="./css/idangerous.swiper.css" />
+<load target="./css/swiper.min.css" />
 
 <load target="./css/webfont.css" />
 <load target="../../common/xeicon/xeicon.min.css" />
@@ -158,8 +159,17 @@
 </block>
 <block cond="$_enable_slide">
 	<block cond="!$layout_info->slide_time">{@ $layout_info->slide_time=3000}</block>
+	<block cond="!$layout_info->slide_height">{@ $layout_info->slide_height=600}</block>
+	<style type="text/css">
+		.swiper-container{
+			
+			height:{$layout_info->slide_height}px;
+		}
+		.swiper-container > div > div {
+			height: {$layout_info->slide_height}px;
+		}
+	</style>
 </block>
-<style></style>
 <block cond="$_use_css == 'custom'">
 	<style type="text/css">
 		.visual.sub .sub_title h1:after{background-color:{$_custom_color};}
@@ -257,7 +267,8 @@
 </block>
 <!--// JS -->
 <load target="./js/jquery.easing.js" />
-<load cond="$_enable_slide" target="./js/idangerous.swiper.min.js" />
+<load cond="$_enable_slide" target="./js/swiper.min.js" />
+
 <load target="./js/layout.js" />
 <load target="./js/main_content.js" />
 <load target="./js/jquery.parallax-scroll.js" />
@@ -477,9 +488,13 @@
 			<!--@end-->
 		</div>
 		<!-- END:슬라이드 -->
-		<div class="swiper-pagination"></div>
+		<div class="swiper-pagination swiper-pagination-white"></div>
+		<div class="swiper-button-prev swiper-button-white"></div>
+		<div class="swiper-button-next swiper-button-white"></div>
+		<!--
 		<div class="swiper-button left"><button type="button" class="swiper-button-prev"><i class="xi-angle-left"></i></button></div>
 		<div class="swiper-button right"><button type="button" class="swiper-button-next"><i class="xi-angle-right"></i></button></div>
+		-->
 	</div>
 	<!-- /VISUAL -->
 
@@ -520,7 +535,11 @@
 
 	</div>
 	<!-- END:BODY -->
+	<!-- BANNER 제작 중 -->
+	<section class=" banner">
 
+	</section>
+	<!-- /.BANNER 제작 중 -->
 	<footer class="footer">
 		<div class="f_info_area">
 			<div class="f_info">
@@ -533,7 +552,37 @@
 						<!--@endif-->
 					</a>
 				</p>
-				<p class="sub_desc">{nl2br($layout_info->footer_text)}</p>
+				<p class="sub_desc">
+
+					{nl2br($layout_info->footer_text)}
+					<!--@if($layout_info->use_banner == 'Y')-->
+						<p class="f_logo" cond="$layout_info->banner_img1">
+							<a href ="<!--@if($layout_info->banner_img1_url)-->{$layout_info->banner_img1_url}<!--@else-->#<!--@end-->" target="{$layout_info->banner_img1_url_target}">
+								<img src="{$layout_info->banner_img1}"  alt="banner1"/>
+							</a>
+						</p>
+						<p class="f_logo" cond="$layout_info->banner_img2">
+							<a href ="<!--@if($layout_info->banner_img2_url)-->{$layout_info->banner_img2_url}<!--@else-->#<!--@end-->" target="{$layout_info->banner_img2_url_target}">
+								<img src="{$layout_info->banner_img2}"  alt="banner2"/>
+							</a>
+						</p>
+						<p class="f_logo" cond="$layout_info->banner_img3">
+							<a href ="<!--@if($layout_info->banner_img3_url)-->{$layout_info->banner_img3_url}<!--@else-->#<!--@end-->" target="{$layout_info->banner_img3_url_target}">
+								<img src="{$layout_info->banner_img3}"  alt="banner3"/>
+							</a>
+						</p>
+						<p class="f_logo" cond="$layout_info->banner_img4">
+							<a href ="<!--@if($layout_info->banner_img4_url)-->{$layout_info->banner_img4_url}<!--@else-->#<!--@end-->" target="{$layout_info->banner_img4_url_target}">
+								<img src="{$layout_info->banner_img4}"  alt="banner4"/>
+							</a>
+						</p>
+						<p class="f_logo" cond="$layout_info->banner_img5">
+							<a href ="<!--@if($layout_info->banner_img5_url)-->{$layout_info->banner_img5_url}<!--@else-->#<!--@end-->" target="{$layout_info->banner_img5_url_target}">
+								<img src="{$layout_info->banner_img5}"  alt="banner5"/>
+							</a>
+						</p>
+					<!--@end-->
+				</p>
 			</div>
 			<div class="f_info2">
 				<div class="site_map">
@@ -708,19 +757,14 @@
 <script cond="$_enable_slide">
 	jQuery(document).ready(function () {
 		var swiper = new Swiper('.swiper-container', {
-			autoplay: {$layout_info->slide_time},
-			loop: true,
+			 // Optional parameters
+			
+			nextButton: '.swiper-button-next',
+		 	prevButton: '.swiper-button-prev',
 			pagination: '.swiper-pagination',
-			paginationClickable: true
-		});
-
-		jQuery('.swiper-button-next').on('click', function(e){
-			e.preventDefault();
-			swiper.swipeNext();
-		});
-		jQuery('.swiper-button-prev').on('click', function(e){
-			e.preventDefault();
-			swiper.swipePrev();
+        			paginationClickable: true,
+        			loop: true,
+        			autoplay:{$layout_info->slide_time}
 		});
 	});
 </script>
