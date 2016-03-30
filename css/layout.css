@@ -645,7 +645,7 @@ a:hover, a:active, a:focus {
 }
 .body.fixed-width .lnb ul ul a {
 	display: block;
-	padding: 10px 0;
+	padding: 10px 0px 10px 20px;
 	font-size: 14px;
 	line-height: 20px;
 	color: #888;
@@ -685,6 +685,7 @@ a:hover, a:active, a:focus {
 	float: none;
 	width: 1200px
 }
+
 /* Scroll to top link */
 .btn_top {
 	display: none;

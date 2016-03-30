@@ -505,10 +505,10 @@
 			<ul>
 				<li loop="$_selected_menu['list'] => $key1, $val1" class="on"|cond="$val1['selected']">
 					<a href="{$val1['href']}" target="_blank"|cond="$val1['open_window'] == 'Y'" style="color:{$layout_info->sidemenu_text_color};"|cond="!$val1['selected']">{$val1['link']}</a>
-					<ul cond="$val1['list']">
+					<ul cond="$val1['list']" class="depth2">
 						<li loop="$val1['list'] => $key2, $val2" class="on"|cond="$val2['selected']">
 							<a href="{$val2['href']}" target="_blank"|cond="$val2['open_window'] == 'Y'" style="color:{$layout_info->sidemenu_text_color};"|cond="!$val2['selected']">{$val2['link']}</a>
-								<ul cond="$val2['list']">
+								<ul cond="$val2['list']" class="depth3">
 									<li loop="$val2['list'] => $key3, $val3" class="on"|cond="$val3['selected']">
 										<a href="{$val3['href']}" style="color:{$layout_info->sidemenu_text_color};"|cond="!$val3['selected']">{$val3['link']}</a>
 									</li>

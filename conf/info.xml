@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout version="0.2">
 	<title xml:lang="ko">XEDITION edited by Kim Tajo</title>
-	<description xml:lang="ko">XE 1.8 기본 테마 수정버전(2.01)</description>
-	<version>2.01</version>
-	<date>2016-03-03</date>
+	<description xml:lang="ko">XE 1.8 기본 테마 수정버전(2.03)</description>
+	<version>2.03</version>
+	<date>2016-03-30</date>
 	<author email_address="gptjdwkd891@gmail.com" link="">
 		<name xml:lang="ko">김타조</name>
 	</author>
@@ -155,6 +155,10 @@
 				<options value="N">
 					<title xml:lang="ko">사용 안 함</title>
 				</options>
+			</var>
+			<var name="layer_popup_width" type="text">
+				<title xml:lang="ko">레이어팝업 크기</title>
+				<description xml:lang="ko">PC버전의 레이어 팝업의 크기를 설정합니다.(기본값: 450px, 숫자만 입력하세요.)</description>
 			</var>
 			<var name="layer_popup_type" type="select">
 				<title xml:lang="ko">레이어 팝업 타입</title>
